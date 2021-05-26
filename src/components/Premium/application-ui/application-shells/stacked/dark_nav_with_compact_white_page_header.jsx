@@ -32,14 +32,17 @@ export default function StackNavBarFour() {
                         itemIdx === 0 ? (
                           <Fragment key={item}>
                             {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                            <a href="#" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">
+                            <a
+                              href="/"
+                              className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                            >
                               {item}
                             </a>
                           </Fragment>
                         ) : (
                           <a
                             key={item}
-                            href="#"
+                            href="/"
                             className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                           >
                             {item}
@@ -88,7 +91,7 @@ export default function StackNavBarFour() {
                                 <Menu.Item key={item}>
                                   {({ active }) => (
                                     <a
-                                      href="#"
+                                      href="/"
                                       className={classNames(
                                         active ? 'bg-gray-100' : '',
                                         'block px-4 py-2 text-sm text-gray-700'
@@ -126,14 +129,17 @@ export default function StackNavBarFour() {
                   itemIdx === 0 ? (
                     <Fragment key={item}>
                       {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                      <a href="#" className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">
+                      <a
+                        href="/"
+                        className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                      >
                         {item}
                       </a>
                     </Fragment>
                   ) : (
                     <a
                       key={item}
-                      href="#"
+                      href="/"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                     >
                       {item}
@@ -151,8 +157,12 @@ export default function StackNavBarFour() {
                     />
                   </div>
                   <div className="ml-3">
-                    <div className="text-base font-medium text-white">Tom Cook</div>
-                    <div className="text-sm font-medium text-gray-400">tom@example.com</div>
+                    <div className="text-base font-medium text-white">
+                      Tom Cook
+                    </div>
+                    <div className="text-sm font-medium text-gray-400">
+                      tom@example.com
+                    </div>
                   </div>
                   <button className="ml-auto bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                     <span className="sr-only">View notifications</span>
@@ -163,7 +173,7 @@ export default function StackNavBarFour() {
                   {profile.map((item) => (
                     <a
                       key={item}
-                      href="#"
+                      href="/"
                       className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
                     >
                       {item}
@@ -178,7 +188,9 @@ export default function StackNavBarFour() {
 
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-lg leading-6 font-semibold text-gray-900">Dashboard</h1>
+          <h1 className="text-lg leading-6 font-semibold text-gray-900">
+            Dashboard
+          </h1>
         </div>
       </header>
       <main>

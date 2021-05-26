@@ -50,7 +50,7 @@ export default function StackNavBarNine() {
               <div className="relative py-5 flex items-center justify-center lg:justify-between">
                 {/* Logo */}
                 <div className="absolute left-0 flex-shrink-0 lg:static">
-                  <a href="#">
+                  <a href="/">
                     <span className="sr-only">Workflow</span>
                     <img
                       className="h-8 w-auto"
@@ -77,7 +77,11 @@ export default function StackNavBarNine() {
                         <div>
                           <Menu.Button className="bg-white rounded-full flex text-sm ring-2 ring-white ring-opacity-20 focus:outline-none focus:ring-opacity-100">
                             <span className="sr-only">Open user menu</span>
-                            <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                            <img
+                              className="h-8 w-8 rounded-full"
+                              src={user.imageUrl}
+                              alt=""
+                            />
                           </Menu.Button>
                         </div>
                         <Transition
@@ -94,7 +98,7 @@ export default function StackNavBarNine() {
                             <Menu.Item>
                               {({ active }) => (
                                 <a
-                                  href="#"
+                                  href="/"
                                   className={classNames(
                                     active ? 'bg-gray-100' : '',
                                     'block px-4 py-2 text-sm text-gray-700'
@@ -107,7 +111,7 @@ export default function StackNavBarNine() {
                             <Menu.Item>
                               {({ active }) => (
                                 <a
-                                  href="#"
+                                  href="/"
                                   className={classNames(
                                     active ? 'bg-gray-100' : '',
                                     'block px-4 py-2 text-sm text-gray-700'
@@ -120,7 +124,7 @@ export default function StackNavBarNine() {
                             <Menu.Item>
                               {({ active }) => (
                                 <a
-                                  href="#"
+                                  href="/"
                                   className={classNames(
                                     active ? 'bg-gray-100' : '',
                                     'block px-4 py-2 text-sm text-gray-700'
@@ -178,7 +182,7 @@ export default function StackNavBarNine() {
                       {navLinks.map((link) => (
                         <a
                           key={link.title}
-                          href="#"
+                          href="/"
                           className={classNames(
                             link.active ? 'text-white' : 'text-indigo-100',
                             'text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10'
@@ -224,7 +228,10 @@ export default function StackNavBarNine() {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <Popover.Overlay static className="z-20 fixed inset-0 bg-black bg-opacity-25" />
+                  <Popover.Overlay
+                    static
+                    className="z-20 fixed inset-0 bg-black bg-opacity-25"
+                  />
                 </Transition.Child>
 
                 <Transition.Child
@@ -260,31 +267,31 @@ export default function StackNavBarNine() {
                         </div>
                         <div className="mt-3 px-2 space-y-1">
                           <a
-                            href="#"
+                            href="/"
                             className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
                           >
                             Home
                           </a>
                           <a
-                            href="#"
+                            href="/"
                             className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
                           >
                             Profile
                           </a>
                           <a
-                            href="#"
+                            href="/"
                             className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
                           >
                             Resources
                           </a>
                           <a
-                            href="#"
+                            href="/"
                             className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
                           >
                             Company Directory
                           </a>
                           <a
-                            href="#"
+                            href="/"
                             className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
                           >
                             Openings
@@ -294,10 +301,16 @@ export default function StackNavBarNine() {
                       <div className="pt-4 pb-2">
                         <div className="flex items-center px-5">
                           <div className="flex-shrink-0">
-                            <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                            <img
+                              className="h-10 w-10 rounded-full"
+                              src={user.imageUrl}
+                              alt=""
+                            />
                           </div>
                           <div className="ml-3 min-w-0 flex-1">
-                            <div className="text-base font-medium text-gray-800 truncate">Rebecca Nicholas</div>
+                            <div className="text-base font-medium text-gray-800 truncate">
+                              Rebecca Nicholas
+                            </div>
                             <div className="text-sm font-medium text-gray-500 truncate">
                               rebecca.nicholas@example.com
                             </div>
@@ -309,19 +322,19 @@ export default function StackNavBarNine() {
                         </div>
                         <div className="mt-3 px-2 space-y-1">
                           <a
-                            href="#"
+                            href="/"
                             className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
                           >
                             Your Profile
                           </a>
                           <a
-                            href="#"
+                            href="/"
                             className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
                           >
                             Settings
                           </a>
                           <a
-                            href="#"
+                            href="/"
                             className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
                           >
                             Sign out
@@ -370,7 +383,9 @@ export default function StackNavBarNine() {
       <footer>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
           <div className="border-t border-gray-200 py-8 text-sm text-gray-500 text-center sm:text-left">
-            <span className="block sm:inline">&copy; 2021 Tailwind Labs Inc.</span>{' '}
+            <span className="block sm:inline">
+              &copy; 2021 Tailwind Labs Inc.
+            </span>{' '}
             <span className="block sm:inline">All rights reserved.</span>
           </div>
         </div>

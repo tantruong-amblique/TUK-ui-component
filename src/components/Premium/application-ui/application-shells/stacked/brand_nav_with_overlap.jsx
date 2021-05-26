@@ -30,7 +30,10 @@ export default function StackNavBarOne() {
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="bg-indigo-600 pb-32">
-        <Disclosure as="nav" className="bg-indigo-600 border-b border-indigo-300 border-opacity-25 lg:border-none">
+        <Disclosure
+          as="nav"
+          className="bg-indigo-600 border-b border-indigo-300 border-opacity-25 lg:border-none"
+        >
           {({ open }) => (
             <>
               <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
@@ -49,14 +52,17 @@ export default function StackNavBarOne() {
                           itemIdx === 0 ? (
                             <Fragment key={item}>
                               {/* Current: "bg-indigo-700 text-white", Default: "text-white hover:bg-indigo-500 hover:bg-opacity-75" */}
-                              <a href="#" className="bg-indigo-700 text-white rounded-md py-2 px-3 text-sm font-medium">
+                              <a
+                                href="/"
+                                className="bg-indigo-700 text-white rounded-md py-2 px-3 text-sm font-medium"
+                              >
                                 {item}
                               </a>
                             </Fragment>
                           ) : (
                             <a
                               key={item}
-                              href="#"
+                              href="/"
                               className="text-white hover:bg-indigo-500 hover:bg-opacity-75 rounded-md py-2 px-3 text-sm font-medium"
                             >
                               {item}
@@ -92,7 +98,10 @@ export default function StackNavBarOne() {
                       {open ? (
                         <XIcon className="block h-6 w-6" aria-hidden="true" />
                       ) : (
-                        <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                        <MenuIcon
+                          className="block h-6 w-6"
+                          aria-hidden="true"
+                        />
                       )}
                     </Disclosure.Button>
                   </div>
@@ -135,7 +144,7 @@ export default function StackNavBarOne() {
                                   <Menu.Item key={item}>
                                     {({ active }) => (
                                       <a
-                                        href="#"
+                                        href="/"
                                         className={classNames(
                                           active ? 'bg-gray-100' : '',
                                           'block py-2 px-4 text-sm text-gray-700'
@@ -163,7 +172,7 @@ export default function StackNavBarOne() {
                       <Fragment key={item}>
                         {/* Current: "bg-indigo-700 text-white", Default: "text-white hover:bg-indigo-500 hover:bg-opacity-75" */}
                         <a
-                          href="#"
+                          href="/"
                           className="bg-indigo-700 text-white block rounded-md py-2 px-3 text-base font-medium"
                         >
                           {item}
@@ -172,7 +181,7 @@ export default function StackNavBarOne() {
                     ) : (
                       <a
                         key={item}
-                        href="#"
+                        href="/"
                         className="text-white hover:bg-indigo-500 hover:bg-opacity-75 block rounded-md py-2 px-3 text-base font-medium"
                       >
                         {item}
@@ -190,8 +199,12 @@ export default function StackNavBarOne() {
                       />
                     </div>
                     <div className="ml-3">
-                      <div className="text-base font-medium text-white">Tom Cook</div>
-                      <div className="text-sm font-medium text-indigo-300">tom@example.com</div>
+                      <div className="text-base font-medium text-white">
+                        Tom Cook
+                      </div>
+                      <div className="text-sm font-medium text-indigo-300">
+                        tom@example.com
+                      </div>
                     </div>
                     <button className="ml-auto bg-indigo-600 flex-shrink-0 rounded-full p-1 text-indigo-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white">
                       <span className="sr-only">View notifications</span>
@@ -202,7 +215,7 @@ export default function StackNavBarOne() {
                     {profile.map((item) => (
                       <a
                         key={item}
-                        href="#"
+                        href="/"
                         className="block rounded-md py-2 px-3 text-base font-medium text-white hover:bg-indigo-500 hover:bg-opacity-75"
                       >
                         {item}
