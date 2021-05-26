@@ -1,11 +1,14 @@
 import React from 'react'
-import Card from './components/Layout/Card/Card'
+import DataDisplay from './components/Premium/application-ui/data-display/DataDisplay'
+import Description from './components/Premium/application-ui/data-display/description-lists/Description'
+import Navigation from './components/Premium/application-ui/navigation/Navigation'
 
 const App = () => {
   return (
-    <div>
-      <Card />
-    </div>
+    <main className="bg-pink-50">
+      <DataDisplay />
+      <Navigation />
+    </main>
   )
 }
 

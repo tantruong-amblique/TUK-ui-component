@@ -6,7 +6,7 @@ const pages = [
   { name: 'Project Nero', href: '#', current: true },
 ]
 
-export default function Example() {
+export default function SimpleWihSlash() {
   return (
     <nav className="flex" aria-label="Breadcrumb">
       <ol className="flex items-center space-x-4">
