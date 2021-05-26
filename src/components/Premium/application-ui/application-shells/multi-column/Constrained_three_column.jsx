@@ -92,13 +92,13 @@ export default function MultiColumOne() {
                     <div className="flex items-center justify-end">
                       <div className="flex">
                         <a
-                          href="#"
+                          href="/"
                           className="px-3 py-2 rounded-md text-sm font-medium text-indigo-200 hover:text-white"
                         >
                           Documentation
                         </a>
                         <a
-                          href="#"
+                          href="/"
                           className="px-3 py-2 rounded-md text-sm font-medium text-indigo-200 hover:text-white"
                         >
                           Support
@@ -135,7 +135,7 @@ export default function MultiColumOne() {
                                 <Menu.Item>
                                   {({ active }) => (
                                     <a
-                                      href="#"
+                                      href="/"
                                       className={classNames(
                                         active ? 'bg-gray-100' : '',
                                         'block px-4 py-2 text-sm text-gray-700'
@@ -148,7 +148,7 @@ export default function MultiColumOne() {
                                 <Menu.Item>
                                   {({ active }) => (
                                     <a
-                                      href="#"
+                                      href="/"
                                       className={classNames(
                                         active ? 'bg-gray-100' : '',
                                         'block px-4 py-2 text-sm text-gray-700'
@@ -161,7 +161,7 @@ export default function MultiColumOne() {
                                 <Menu.Item>
                                   {({ active }) => (
                                     <a
-                                      href="#"
+                                      href="/"
                                       className={classNames(
                                         active ? 'bg-gray-100' : '',
                                         'block px-4 py-2 text-sm text-gray-700'
@@ -184,13 +184,13 @@ export default function MultiColumOne() {
               <Disclosure.Panel className="lg:hidden">
                 <div className="px-2 pt-2 pb-3">
                   <a
-                    href="#"
+                    href="/"
                     className="block px-3 py-2 rounded-md text-base font-medium text-white bg-indigo-800"
                   >
                     Dashboard
                   </a>
                   <a
-                    href="#"
+                    href="/"
                     className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600"
                   >
                     Support
@@ -199,19 +199,19 @@ export default function MultiColumOne() {
                 <div className="pt-4 pb-3 border-t border-indigo-800">
                   <div className="px-2">
                     <a
-                      href="#"
+                      href="/"
                       className="block px-3 py-2 rounded-md text-base font-medium text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600"
                     >
                       Your Profile
                     </a>
                     <a
-                      href="#"
+                      href="/"
                       className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600"
                     >
                       Settings
                     </a>
                     <a
-                      href="#"
+                      href="/"
                       className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600"
                     >
                       Sign out

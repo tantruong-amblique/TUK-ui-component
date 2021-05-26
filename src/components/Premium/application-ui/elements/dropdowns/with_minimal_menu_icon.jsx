@@ -37,7 +37,7 @@ export default function DropDownsFour() {
                 <Menu.Item>
                   {({ active }) => (
                     <a
-                      href="#"
+                      href="/"
                       className={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                         'block px-4 py-2 text-sm'
@@ -50,7 +50,7 @@ export default function DropDownsFour() {
                 <Menu.Item>
                   {({ active }) => (
                     <a
-                      href="#"
+                      href="/"
                       className={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                         'block px-4 py-2 text-sm'
@@ -63,7 +63,7 @@ export default function DropDownsFour() {
                 <Menu.Item>
                   {({ active }) => (
                     <a
-                      href="#"
+                      href="/"
                       className={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                         'block px-4 py-2 text-sm'
@@ -73,13 +73,15 @@ export default function DropDownsFour() {
                     </a>
                   )}
                 </Menu.Item>
-                <form method="POST" action="#">
+                <form method="POST" action="/">
                   <Menu.Item>
                     {({ active }) => (
                       <button
                         type="submit"
                         className={classNames(
-                          active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                          active
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700',
                           'block w-full text-left px-4 py-2 text-sm'
                         )}
                       >

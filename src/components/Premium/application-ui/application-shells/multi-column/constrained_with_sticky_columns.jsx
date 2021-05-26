@@ -29,15 +29,15 @@ const user = {
     'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Teams', href: '#', current: false },
-  { name: 'Directory', href: '#', current: false },
+  { name: 'Dashboard', href: '/', current: true },
+  { name: 'Calendar', href: '/', current: false },
+  { name: 'Teams', href: '/', current: false },
+  { name: 'Directory', href: '/', current: false },
 ]
 const userNavigation = [
-  { name: 'Your Profile', href: '#' },
-  { name: 'Settings', href: '#' },
-  { name: 'Sign out', href: '#' },
+  { name: 'Your Profile', href: '/' },
+  { name: 'Settings', href: '/' },
+  { name: 'Sign out', href: '/' },
 ]
 
 function classNames(...classes) {
@@ -62,7 +62,7 @@ export default function MultiColumTwo() {
               <div className="relative flex justify-between xl:grid xl:grid-cols-12 lg:gap-8">
                 <div className="flex md:absolute md:left-0 md:inset-y-0 lg:static xl:col-span-2">
                   <div className="flex-shrink-0 flex items-center">
-                    <a href="#">
+                    <a href="/">
                       <img
                         className="block h-8 w-auto"
                         src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
@@ -79,7 +79,10 @@ export default function MultiColumTwo() {
                       </label>
                       <div className="relative">
                         <div className="pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center">
-                          <SearchIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                          <SearchIcon
+                            className="h-5 w-5 text-gray-400"
+                            aria-hidden="true"
+                          />
                         </div>
                         <input
                           id="search"
@@ -105,7 +108,7 @@ export default function MultiColumTwo() {
                 </div>
                 <div className="hidden lg:flex lg:items-center lg:justify-end xl:col-span-4">
                   <a
-                    href="#"
+                    href="/"
                     className="ml-5 flex-shrink-0 bg-white rounded-full p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
                     <span className="sr-only">View notifications</span>
@@ -119,7 +122,11 @@ export default function MultiColumTwo() {
                         <div>
                           <Menu.Button className="bg-white rounded-full flex focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                             <span className="sr-only">Open user menu</span>
-                            <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                            <img
+                              className="h-8 w-8 rounded-full"
+                              src={user.imageUrl}
+                              alt=""
+                            />
                           </Menu.Button>
                         </div>
                         <Transition
@@ -158,7 +165,7 @@ export default function MultiColumTwo() {
                   </Menu>
 
                   <a
-                    href="#"
+                    href="/"
                     className="ml-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
                     New Project
@@ -175,7 +182,9 @@ export default function MultiColumTwo() {
                     href={item.href}
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
-                      item.current ? 'bg-gray-100 text-gray-900' : 'hover:bg-gray-50',
+                      item.current
+                        ? 'bg-gray-100 text-gray-900'
+                        : 'hover:bg-gray-50',
                       'block rounded-md py-2 px-3 text-base font-medium'
                     )}
                   >
@@ -186,11 +195,19 @@ export default function MultiColumTwo() {
               <div className="border-t border-gray-200 pt-4 pb-3">
                 <div className="max-w-3xl mx-auto px-4 flex items-center sm:px-6">
                   <div className="flex-shrink-0">
-                    <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                    <img
+                      className="h-10 w-10 rounded-full"
+                      src={user.imageUrl}
+                      alt=""
+                    />
                   </div>
                   <div className="ml-3">
-                    <div className="text-base font-medium text-gray-800">{user.name}</div>
-                    <div className="text-sm font-medium text-gray-500">{user.email}</div>
+                    <div className="text-base font-medium text-gray-800">
+                      {user.name}
+                    </div>
+                    <div className="text-sm font-medium text-gray-500">
+                      {user.email}
+                    </div>
                   </div>
                   <button
                     type="button"
@@ -220,11 +237,16 @@ export default function MultiColumTwo() {
       <div className="py-6">
         <div className="max-w-3xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="hidden lg:block lg:col-span-3 xl:col-span-2">
-            <nav aria-label="Sidebar" className="sticky top-6 divide-y divide-gray-300">
+            <nav
+              aria-label="Sidebar"
+              className="sticky top-6 divide-y divide-gray-300"
+            >
               {/* Your content */}
             </nav>
           </div>
-          <main className="lg:col-span-9 xl:col-span-6">{/* Your content */}</main>
+          <main className="lg:col-span-9 xl:col-span-6">
+            {/* Your content */}
+          </main>
           <aside className="hidden xl:block xl:col-span-4">
             <div className="sticky top-6 space-y-4">{/* Your content */}</div>
           </aside>

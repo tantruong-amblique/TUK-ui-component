@@ -13,12 +13,12 @@ import {
 } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
-  { name: 'Team', href: '#', icon: UsersIcon, current: false },
-  { name: 'Projects', href: '#', icon: FolderIcon, current: false },
-  { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
-  { name: 'Documents', href: '#', icon: InboxIcon, current: false },
-  { name: 'Reports', href: '#', icon: ChartBarIcon, current: false },
+  { name: 'Dashboard', href: '/', icon: HomeIcon, current: true },
+  { name: 'Team', href: '/', icon: UsersIcon, current: false },
+  { name: 'Projects', href: '/', icon: FolderIcon, current: false },
+  { name: 'Calendar', href: '/', icon: CalendarIcon, current: false },
+  { name: 'Documents', href: '/', icon: InboxIcon, current: false },
+  { name: 'Reports', href: '/', icon: ChartBarIcon, current: false },
 ]
 
 function classNames(...classes) {
@@ -98,14 +98,17 @@ export default function SiderBarTwo() {
                         'group flex items-center px-2 py-2 text-base font-medium rounded-md'
                       )}
                     >
-                      <item.icon className="mr-4 flex-shrink-0 h-6 w-6 text-indigo-300" aria-hidden="true" />
+                      <item.icon
+                        className="mr-4 flex-shrink-0 h-6 w-6 text-indigo-300"
+                        aria-hidden="true"
+                      />
                       {item.name}
                     </a>
                   ))}
                 </nav>
               </div>
               <div className="flex-shrink-0 flex border-t border-indigo-800 p-4">
-                <a href="#" className="flex-shrink-0 group block">
+                <a href="/" className="flex-shrink-0 group block">
                   <div className="flex items-center">
                     <div>
                       <img
@@ -115,8 +118,12 @@ export default function SiderBarTwo() {
                       />
                     </div>
                     <div className="ml-3">
-                      <p className="text-base font-medium text-white">Tom Cook</p>
-                      <p className="text-sm font-medium text-indigo-200 group-hover:text-white">View profile</p>
+                      <p className="text-base font-medium text-white">
+                        Tom Cook
+                      </p>
+                      <p className="text-sm font-medium text-indigo-200 group-hover:text-white">
+                        View profile
+                      </p>
                     </div>
                   </div>
                 </a>
@@ -148,18 +155,23 @@ export default function SiderBarTwo() {
                     key={item.name}
                     href={item.href}
                     className={classNames(
-                      item.current ? 'bg-indigo-800 text-white' : 'text-white hover:bg-indigo-600 hover:bg-opacity-75',
+                      item.current
+                        ? 'bg-indigo-800 text-white'
+                        : 'text-white hover:bg-indigo-600 hover:bg-opacity-75',
                       'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
                     )}
                   >
-                    <item.icon className="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300" aria-hidden="true" />
+                    <item.icon
+                      className="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300"
+                      aria-hidden="true"
+                    />
                     {item.name}
                   </a>
                 ))}
               </nav>
             </div>
             <div className="flex-shrink-0 flex border-t border-indigo-800 p-4">
-              <a href="#" className="flex-shrink-0 w-full group block">
+              <a href="/" className="flex-shrink-0 w-full group block">
                 <div className="flex items-center">
                   <div>
                     <img
@@ -170,7 +182,9 @@ export default function SiderBarTwo() {
                   </div>
                   <div className="ml-3">
                     <p className="text-sm font-medium text-white">Tom Cook</p>
-                    <p className="text-xs font-medium text-indigo-200 group-hover:text-white">View profile</p>
+                    <p className="text-xs font-medium text-indigo-200 group-hover:text-white">
+                      View profile
+                    </p>
                   </div>
                 </div>
               </a>
@@ -191,7 +205,9 @@ export default function SiderBarTwo() {
         <main className="flex-1 relative z-0 overflow-y-auto focus:outline-none">
           <div className="py-6">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-              <h1 className="text-2xl font-semibold text-gray-900">Dashboard</h1>
+              <h1 className="text-2xl font-semibold text-gray-900">
+                Dashboard
+              </h1>
             </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
               {/* Replace with your content */}

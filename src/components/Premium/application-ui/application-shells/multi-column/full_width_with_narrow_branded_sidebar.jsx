@@ -1,7 +1,15 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { BookmarkAltIcon, FireIcon, HomeIcon, InboxIcon, MenuIcon, UserIcon, XIcon } from '@heroicons/react/outline'
+import {
+  BookmarkAltIcon,
+  FireIcon,
+  HomeIcon,
+  InboxIcon,
+  MenuIcon,
+  UserIcon,
+  XIcon,
+} from '@heroicons/react/outline'
 
 const user = {
   name: 'Emily Selman',
@@ -9,11 +17,11 @@ const user = {
     'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
-  { name: 'Home', href: '#', icon: HomeIcon },
-  { name: 'Trending', href: '#', icon: FireIcon },
-  { name: 'Bookmarks', href: '#', icon: BookmarkAltIcon },
-  { name: 'Messages', href: '#', icon: InboxIcon },
-  { name: 'Profile', href: '#', icon: UserIcon },
+  { name: 'Home', href: '/', icon: HomeIcon },
+  { name: 'Trending', href: '/', icon: FireIcon },
+  { name: 'Bookmarks', href: '/', icon: BookmarkAltIcon },
+  { name: 'Messages', href: '/', icon: InboxIcon },
+  { name: 'Profile', href: '/', icon: UserIcon },
 ]
 
 export default function MultiColumFive() {
@@ -97,14 +105,22 @@ export default function MultiColumFive() {
                 </nav>
               </div>
               <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
-                <a href="#" className="flex-shrink-0 group block">
+                <a href="/" className="flex-shrink-0 group block">
                   <div className="flex items-center">
                     <div>
-                      <img className="inline-block h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                      <img
+                        className="inline-block h-10 w-10 rounded-full"
+                        src={user.imageUrl}
+                        alt=""
+                      />
                     </div>
                     <div className="ml-3">
-                      <p className="text-base font-medium text-gray-700 group-hover:text-gray-900">{user.name}</p>
-                      <p className="text-sm font-medium text-gray-500 group-hover:text-gray-700">Account Settings</p>
+                      <p className="text-base font-medium text-gray-700 group-hover:text-gray-900">
+                        {user.name}
+                      </p>
+                      <p className="text-sm font-medium text-gray-500 group-hover:text-gray-700">
+                        Account Settings
+                      </p>
                     </div>
                   </div>
                 </a>
@@ -129,7 +145,10 @@ export default function MultiColumFive() {
                   alt="Workflow"
                 />
               </div>
-              <nav aria-label="Sidebar" className="py-6 flex flex-col items-center space-y-3">
+              <nav
+                aria-label="Sidebar"
+                className="py-6 flex flex-col items-center space-y-3"
+              >
                 {navigation.map((item) => (
                   <a
                     key={item.name}
@@ -143,8 +162,12 @@ export default function MultiColumFive() {
               </nav>
             </div>
             <div className="flex-shrink-0 flex pb-5">
-              <a href="#" className="flex-shrink-0 w-full">
-                <img className="block mx-auto h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+              <a href="/" className="flex-shrink-0 w-full">
+                <img
+                  className="block mx-auto h-10 w-10 rounded-full"
+                  src={user.imageUrl}
+                  alt=""
+                />
                 <div className="sr-only">
                   <p>{user.name}</p>
                   <p>Account settings</p>

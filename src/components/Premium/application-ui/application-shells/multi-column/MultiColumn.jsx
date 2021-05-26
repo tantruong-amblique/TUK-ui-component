@@ -17,7 +17,6 @@ const Multi_Column = () => {
       <MultiColumFive />
       <MultiColumSix />
       <MultiColumSeven />
-
     </div>
   )
 }

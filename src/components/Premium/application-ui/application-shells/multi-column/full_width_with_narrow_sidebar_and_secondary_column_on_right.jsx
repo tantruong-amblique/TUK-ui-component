@@ -30,16 +30,16 @@ import {
 import { SearchIcon } from '@heroicons/react/solid'
 
 const sidebarNavigation = [
-  { name: 'Home', href: '#', icon: HomeIcon, current: false },
-  { name: 'All Files', href: '#', icon: ViewGridIcon, current: false },
-  { name: 'Photos', href: '#', icon: PhotographIcon, current: true },
-  { name: 'Shared', href: '#', icon: UserGroupIcon, current: false },
-  { name: 'Albums', href: '#', icon: CollectionIcon, current: false },
-  { name: 'Settings', href: '#', icon: CogIcon, current: false },
+  { name: 'Home', href: '/', icon: HomeIcon, current: false },
+  { name: 'All Files', href: '/', icon: ViewGridIcon, current: false },
+  { name: 'Photos', href: '/', icon: PhotographIcon, current: true },
+  { name: 'Shared', href: '/', icon: UserGroupIcon, current: false },
+  { name: 'Albums', href: '/', icon: CollectionIcon, current: false },
+  { name: 'Settings', href: '/', icon: CogIcon, current: false },
 ]
 const userNavigation = [
-  { name: 'Your Profile', href: '#' },
-  { name: 'Sign out', href: '#' },
+  { name: 'Your Profile', href: '/' },
+  { name: 'Sign out', href: '/' },
 ]
 
 function classNames(...classes) {
@@ -67,14 +67,18 @@ export default function MultiColumSix() {
                 key={item.name}
                 href={item.href}
                 className={classNames(
-                  item.current ? 'bg-indigo-800 text-white' : 'text-indigo-100 hover:bg-indigo-800 hover:text-white',
+                  item.current
+                    ? 'bg-indigo-800 text-white'
+                    : 'text-indigo-100 hover:bg-indigo-800 hover:text-white',
                   'group w-full p-3 rounded-md flex flex-col items-center text-xs font-medium'
                 )}
                 aria-current={item.current ? 'page' : undefined}
               >
                 <item.icon
                   className={classNames(
-                    item.current ? 'text-white' : 'text-indigo-300 group-hover:text-white',
+                    item.current
+                      ? 'text-white'
+                      : 'text-indigo-300 group-hover:text-white',
                     'h-6 w-6'
                   )}
                   aria-hidden="true"
@@ -88,7 +92,13 @@ export default function MultiColumSix() {
 
       {/* Mobile menu */}
       <Transition.Root show={mobileMenuOpen} as={Fragment}>
-        <Dialog as="div" static className="md:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <Dialog
+          as="div"
+          static
+          className="md:hidden"
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+        >
           <div className="fixed inset-0 z-40 flex">
             <Transition.Child
               as={Fragment}
@@ -126,7 +136,10 @@ export default function MultiColumSix() {
                       className="h-12 w-12 rounded-full flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-white"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                      <XIcon
+                        className="h-6 w-6 text-white"
+                        aria-hidden="true"
+                      />
                       <span className="sr-only">Close sidebar</span>
                     </button>
                   </div>
@@ -155,7 +168,9 @@ export default function MultiColumSix() {
                         >
                           <item.icon
                             className={classNames(
-                              item.current ? 'text-white' : 'text-indigo-300 group-hover:text-white',
+                              item.current
+                                ? 'text-white'
+                                : 'text-indigo-300 group-hover:text-white',
                               'mr-3 h-6 w-6'
                             )}
                             aria-hidden="true"
@@ -189,13 +204,16 @@ export default function MultiColumSix() {
             </button>
             <div className="flex-1 flex justify-between px-4 sm:px-6">
               <div className="flex-1 flex">
-                <form className="w-full flex md:ml-0" action="#" method="GET">
+                <form className="w-full flex md:ml-0" action="/" method="GET">
                   <label htmlFor="search_field" className="sr-only">
                     Search all files
                   </label>
                   <div className="relative w-full text-gray-400 focus-within:text-gray-600">
                     <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center">
-                      <SearchIcon className="flex-shrink-0 h-5 w-5" aria-hidden="true" />
+                      <SearchIcon
+                        className="flex-shrink-0 h-5 w-5"
+                        aria-hidden="true"
+                      />
                     </div>
                     <input
                       name="search_field"

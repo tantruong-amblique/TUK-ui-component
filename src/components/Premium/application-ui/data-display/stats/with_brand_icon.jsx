@@ -91,7 +91,7 @@ export default function ExampleTwo() {
               <div className="absolute bottom-0 inset-x-0 bg-gray-50 px-4 py-4 sm:px-6">
                 <div className="text-sm">
                   <a
-                    href="#"
+                    href="/"
                     className="font-medium text-indigo-600 hover:text-indigo-500"
                   >
                     {' '}

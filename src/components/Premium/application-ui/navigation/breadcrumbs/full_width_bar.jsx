@@ -2,8 +2,8 @@
 import { HomeIcon } from '@heroicons/react/solid'
 
 const pages = [
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Project Nero', href: '#', current: true },
+  { name: 'Projects', href: '/', current: false },
+  { name: 'Project Nero', href: '/', current: true },
 ]
 
 export default function FullWidthBar() {
@@ -15,7 +15,7 @@ export default function FullWidthBar() {
       <ol className="max-w-screen-xl w-full mx-auto px-4 flex space-x-4 sm:px-6 lg:px-8">
         <li className="flex">
           <div className="flex items-center">
-            <a href="#" className="text-gray-400 hover:text-gray-500">
+            <a href="/" className="text-gray-400 hover:text-gray-500">
               <HomeIcon className="flex-shrink-0 h-5 w-5" aria-hidden="true" />
               <span className="sr-only">Home</span>
             </a>

@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 export default function AvatrasGroupEleven() {
   return (
-    <a href="#" className="flex-shrink-0 group block">
+    <a href="/" className="flex-shrink-0 group block">
       <div className="flex items-center">
         <div>
           <img
@@ -11,8 +11,12 @@ export default function AvatrasGroupEleven() {
           />
         </div>
         <div className="ml-3">
-          <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">Tom Cook</p>
-          <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">View profile</p>
+          <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
+            Tom Cook
+          </p>
+          <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
+            View profile
+          </p>
         </div>
       </div>
     </a>

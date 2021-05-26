@@ -42,25 +42,25 @@ export default function WithQA() {
                 <div className="hidden md:ml-6 md:flex md:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <a
-                    href="#"
+                    href="/"
                     className="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     Dashboard
                   </a>
                   <a
-                    href="#"
+                    href="/"
                     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     Team
                   </a>
                   <a
-                    href="#"
+                    href="/"
                     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     Projects
                   </a>
                   <a
-                    href="#"
+                    href="/"
                     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     Calendar
@@ -117,7 +117,7 @@ export default function WithQA() {
                             <Menu.Item>
                               {({ active }) => (
                                 <a
-                                  href="#"
+                                  href="/"
                                   className={classNames(
                                     active ? 'bg-gray-100' : '',
                                     'block px-4 py-2 text-sm text-gray-700'
@@ -130,7 +130,7 @@ export default function WithQA() {
                             <Menu.Item>
                               {({ active }) => (
                                 <a
-                                  href="#"
+                                  href="/"
                                   className={classNames(
                                     active ? 'bg-gray-100' : '',
                                     'block px-4 py-2 text-sm text-gray-700'
@@ -143,7 +143,7 @@ export default function WithQA() {
                             <Menu.Item>
                               {({ active }) => (
                                 <a
-                                  href="#"
+                                  href="/"
                                   className={classNames(
                                     active ? 'bg-gray-100' : '',
                                     'block px-4 py-2 text-sm text-gray-700'
@@ -167,25 +167,25 @@ export default function WithQA() {
             <div className="pt-2 pb-3 space-y-1">
               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <a
-                href="#"
+                href="/"
                 className="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
               >
                 Dashboard
               </a>
               <a
-                href="#"
+                href="/"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
               >
                 Team
               </a>
               <a
-                href="#"
+                href="/"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
               >
                 Projects
               </a>
               <a
-                href="#"
+                href="/"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
               >
                 Calendar
@@ -215,19 +215,19 @@ export default function WithQA() {
               </div>
               <div className="mt-3 space-y-1">
                 <a
-                  href="#"
+                  href="/"
                   className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 sm:px-6"
                 >
                   Your Profile
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 sm:px-6"
                 >
                   Settings
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 sm:px-6"
                 >
                   Sign out

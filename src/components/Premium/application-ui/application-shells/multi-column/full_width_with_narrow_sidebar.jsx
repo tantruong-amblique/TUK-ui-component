@@ -38,27 +38,27 @@ const user = {
 const navigation = [
   {
     name: 'Inboxes',
-    href: '#',
+    href: '/',
     children: [
-      { name: 'Technical Support', href: '#' },
-      { name: 'Sales', href: '#' },
-      { name: 'General', href: '#' },
+      { name: 'Technical Support', href: '/' },
+      { name: 'Sales', href: '/' },
+      { name: 'General', href: '/' },
     ],
   },
-  { name: 'Reporting', href: '#', children: [] },
-  { name: 'Settings', href: '#', children: [] },
+  { name: 'Reporting', href: '/', children: [] },
+  { name: 'Settings', href: '/', children: [] },
 ]
 const sidebarNavigation = [
-  { name: 'Open', href: '#', icon: InboxIcon, current: true },
-  { name: 'Archive', href: '#', icon: ArchiveIcon, current: false },
-  { name: 'Customers', href: '#', icon: UserCircleIcon, current: false },
-  { name: 'Flagged', href: '#', icon: FlagIcon, current: false },
-  { name: 'Spam', href: '#', icon: BanIcon, current: false },
-  { name: 'Drafts', href: '#', icon: PencilAltIcon, current: false },
+  { name: 'Open', href: '/', icon: InboxIcon, current: true },
+  { name: 'Archive', href: '/', icon: ArchiveIcon, current: false },
+  { name: 'Customers', href: '/', icon: UserCircleIcon, current: false },
+  { name: 'Flagged', href: '/', icon: FlagIcon, current: false },
+  { name: 'Spam', href: '/', icon: BanIcon, current: false },
+  { name: 'Drafts', href: '/', icon: PencilAltIcon, current: false },
 ]
 const userNavigation = [
-  { name: 'Your Profile', href: '#' },
-  { name: 'Sign out', href: '#' },
+  { name: 'Your Profile', href: '/' },
+  { name: 'Sign out', href: '/' },
 ]
 
 function classNames(...classes) {
@@ -75,7 +75,7 @@ export default function MultiColumSeven() {
         {/* Logo area */}
         <div className="absolute inset-y-0 left-0 md:static md:flex-shrink-0">
           <a
-            href="#"
+            href="/"
             className="flex items-center justify-center h-16 w-16 bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 md:w-20"
           >
             <img
@@ -102,7 +102,10 @@ export default function MultiColumSeven() {
               ))}
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-2">
-              <ChevronDownIcon className="h-5 w-5 text-gray-500" aria-hidden="true" />
+              <ChevronDownIcon
+                className="h-5 w-5 text-gray-500"
+                aria-hidden="true"
+              />
             </div>
           </div>
         </div>
@@ -140,19 +143,22 @@ export default function MultiColumSeven() {
           </div>
           <div className="ml-10 pr-4 flex-shrink-0 flex items-center space-x-10">
             <nav aria-label="Global" className="flex space-x-10">
-              <a href="#" className="text-sm font-medium text-gray-900">
+              <a href="/" className="text-sm font-medium text-gray-900">
                 Inboxes
               </a>
-              <a href="#" className="text-sm font-medium text-gray-900">
+              <a href="/" className="text-sm font-medium text-gray-900">
                 Reporting
               </a>
-              <a href="#" className="text-sm font-medium text-gray-900">
+              <a href="/" className="text-sm font-medium text-gray-900">
                 Settings
               </a>
             </nav>
             <div className="flex items-center space-x-8">
               <span className="inline-flex">
-                <a href="#" className="-mx-1 bg-white p-1 rounded-full text-gray-400 hover:text-gray-500">
+                <a
+                  href="/"
+                  className="-mx-1 bg-white p-1 rounded-full text-gray-400 hover:text-gray-500"
+                >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
                 </a>
@@ -163,7 +169,11 @@ export default function MultiColumSeven() {
                   <>
                     <Menu.Button className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">
                       <span className="sr-only">Open user menu</span>
-                      <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                      <img
+                        className="h-8 w-8 rounded-full"
+                        src={user.imageUrl}
+                        alt=""
+                      />
                     </Menu.Button>
 
                     <Transition
@@ -184,7 +194,7 @@ export default function MultiColumSeven() {
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="#"
+                                href="/"
                                 className={classNames(
                                   active ? 'bg-gray-100' : '',
                                   'block px-4 py-2 text-sm text-gray-700'
@@ -197,7 +207,7 @@ export default function MultiColumSeven() {
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="#"
+                                href="/"
                                 className={classNames(
                                   active ? 'bg-gray-100' : '',
                                   'block px-4 py-2 text-sm text-gray-700'
@@ -252,7 +262,7 @@ export default function MultiColumSeven() {
                 aria-label="Global"
               >
                 <div className="h-16 flex items-center justify-between px-4 sm:px-6">
-                  <a href="#">
+                  <a href="/">
                     <img
                       className="block h-8 w-auto"
                       src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=500"
@@ -308,13 +318,24 @@ export default function MultiColumSeven() {
                 <div className="border-t border-gray-200 pt-4 pb-3">
                   <div className="max-w-8xl mx-auto px-4 flex items-center sm:px-6">
                     <div className="flex-shrink-0">
-                      <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                      <img
+                        className="h-10 w-10 rounded-full"
+                        src={user.imageUrl}
+                        alt=""
+                      />
                     </div>
                     <div className="ml-3 min-w-0 flex-1">
-                      <div className="text-base font-medium text-gray-800 truncate">{user.name}</div>
-                      <div className="text-sm font-medium text-gray-500 truncate">{user.email}</div>
+                      <div className="text-base font-medium text-gray-800 truncate">
+                        {user.name}
+                      </div>
+                      <div className="text-sm font-medium text-gray-500 truncate">
+                        {user.email}
+                      </div>
                     </div>
-                    <a href="#" className="ml-auto flex-shrink-0 bg-white p-2 text-gray-400 hover:text-gray-500">
+                    <a
+                      href="/"
+                      className="ml-auto flex-shrink-0 bg-white p-2 text-gray-400 hover:text-gray-500"
+                    >
                       <span className="sr-only">View notifications</span>
                       <BellIcon className="h-6 w-6" aria-hidden="true" />
                     </a>
@@ -340,14 +361,19 @@ export default function MultiColumSeven() {
       {/* Bottom section */}
       <div className="min-h-0 flex-1 flex overflow-hidden">
         {/* Narrow sidebar*/}
-        <nav aria-label="Sidebar" className="hidden md:block md:flex-shrink-0 md:bg-gray-800 md:overflow-y-auto">
+        <nav
+          aria-label="Sidebar"
+          className="hidden md:block md:flex-shrink-0 md:bg-gray-800 md:overflow-y-auto"
+        >
           <div className="relative w-20 flex flex-col p-3 space-y-3">
             {sidebarNavigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 className={classNames(
-                  item.current ? 'bg-gray-900 text-white' : 'text-gray-400 hover:bg-gray-700',
+                  item.current
+                    ? 'bg-gray-900 text-white'
+                    : 'text-gray-400 hover:bg-gray-700',
                   'flex-shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-lg'
                 )}
               >
