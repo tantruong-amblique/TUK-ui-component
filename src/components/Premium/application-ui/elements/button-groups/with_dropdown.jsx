@@ -13,7 +13,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function ButtonFour() {
   return (
     <span className="relative z-0 inline-flex shadow-sm rounded-md">
       <button

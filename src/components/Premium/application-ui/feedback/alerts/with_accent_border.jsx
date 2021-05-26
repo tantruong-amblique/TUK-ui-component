@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { ExclamationIcon } from '@heroicons/react/solid'
 
-export default function Example() {
+export default function FeedBackOne() {
   return (
     <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
       <div className="flex">
