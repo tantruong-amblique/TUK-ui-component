@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-export default function Example() {
+export default function AvatrasGroupFour() {
   return (
     <>
       <span className="inline-block h-6 w-6 rounded-full overflow-hidden bg-gray-100">

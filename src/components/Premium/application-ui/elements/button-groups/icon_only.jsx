@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
 
-export default function Example() {
+export default function ButtonTwo() {
   return (
     <span className="relative z-0 inline-flex shadow-sm rounded-md">
       <button

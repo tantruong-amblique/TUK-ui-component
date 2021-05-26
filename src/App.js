@@ -1,10 +1,10 @@
 import React from 'react'
-import Card from './components/Layout/Card/Card'
+import ApplicationUi from './components/Premium/application-ui/ApplicationUi'
 
 const App = () => {
   return (
     <div>
-      <Card />
+      <ApplicationUi />
     </div>
   )
 }

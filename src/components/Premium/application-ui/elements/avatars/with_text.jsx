@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-export default function Example() {
+export default function AvatrasGroupEleven() {
   return (
     <a href="#" className="flex-shrink-0 group block">
       <div className="flex items-center">

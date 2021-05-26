@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-export default function Example() {
+export default function AvatrasGroupFive() {
   return (
     <>
       <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-gray-500">

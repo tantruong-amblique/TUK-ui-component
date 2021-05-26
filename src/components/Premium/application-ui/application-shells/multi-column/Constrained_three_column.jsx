@@ -23,7 +23,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Constrained_three_column() {
+export default function MultiColumOne() {
   return (
     <>
       {/* Background color split screen for large screens */}

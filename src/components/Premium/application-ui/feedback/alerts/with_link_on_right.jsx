@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { InformationCircleIcon } from '@heroicons/react/solid'
 
-export default function Example() {
+export default function FeedBackFive() {
   return (
     <div className="rounded-md bg-blue-50 p-4">
       <div className="flex">

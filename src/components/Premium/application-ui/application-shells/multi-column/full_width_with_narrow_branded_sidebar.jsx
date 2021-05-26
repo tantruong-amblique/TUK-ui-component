@@ -16,7 +16,7 @@ const navigation = [
   { name: 'Profile', href: '#', icon: UserIcon },
 ]
 
-export default function Example() {
+export default function MultiColumFive() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (

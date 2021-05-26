@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-export default function Example() {
+export default function BadgeFour() {
   return (
     <>
       <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-gray-100 text-gray-800">
