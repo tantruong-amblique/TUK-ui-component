@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { ExclamationIcon } from '@heroicons/react/solid'
 
-export default function Example() {
+export default function FeedBackThree() {
   return (
     <div className="rounded-md bg-yellow-50 p-4">
       <div className="flex">

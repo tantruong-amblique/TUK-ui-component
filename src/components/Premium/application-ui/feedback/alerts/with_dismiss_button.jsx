@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { CheckCircleIcon, XIcon } from '@heroicons/react/solid'
 
-export default function Example() {
+export default function FeedBackFour() {
   return (
     <div className="rounded-md bg-green-50 p-4">
       <div className="flex">

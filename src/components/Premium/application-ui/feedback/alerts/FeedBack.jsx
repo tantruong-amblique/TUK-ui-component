@@ -1,0 +1,22 @@
+import React from 'react'
+import FeedBackOne from './with_accent_border'
+import FeedBackTwo from './with_actions'
+import FeedBackThree from './with_description'
+import FeedBackFour from './with_dismiss_button'
+import FeedBackFive from './with_link_on_right'
+import FeedBackSix from './with_list'
+
+const FeedBack = () => {
+    return (
+        <div>
+            <FeedBackOne />
+            <FeedBackTwo />
+            <FeedBackThree />
+            <FeedBackFour />
+            <FeedBackFive />
+            <FeedBackSix />
+        </div>
+    )
+}
+
+export default FeedBack

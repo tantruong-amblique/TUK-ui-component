@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-export default function Example() {
+export default function AvatrasGroupNine() {
   return (
     <>
       <span className="inline-block relative">

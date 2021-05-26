@@ -10,7 +10,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function StackNavBarThree() {
   return (
     <div>
       <Disclosure as="nav" className="bg-indigo-600">

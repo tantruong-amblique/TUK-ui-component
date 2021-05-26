@@ -25,7 +25,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function StackNavBarEight() {
   return (
     <div className="min-h-screen bg-white">
       <Disclosure as="nav" className="bg-white border-b border-gray-200">
