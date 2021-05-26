@@ -7,7 +7,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Sd() {
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -30,7 +30,10 @@ export default function Example() {
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                    <a href="#" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">
+                    <a
+                      href="#"
+                      className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
                       Dashboard
                     </a>
                     <a
@@ -152,7 +155,10 @@ export default function Example() {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-              <a href="#" className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">
+              <a
+                href="#"
+                className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
                 Dashboard
               </a>
               <a
@@ -184,8 +190,12 @@ export default function Example() {
                   />
                 </div>
                 <div className="ml-3">
-                  <div className="text-base font-medium text-white">Tom Cook</div>
-                  <div className="text-sm font-medium text-gray-400">tom@example.com</div>
+                  <div className="text-base font-medium text-white">
+                    Tom Cook
+                  </div>
+                  <div className="text-sm font-medium text-gray-400">
+                    tom@example.com
+                  </div>
                 </div>
                 <button className="ml-auto flex-shrink-0 bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                   <span className="sr-only">View notifications</span>

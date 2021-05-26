@@ -6,7 +6,7 @@ const pages = [
   { name: 'Project Nero', href: '#', current: true },
 ]
 
-export default function Example() {
+export default function Contained() {
   return (
     <nav className="flex" aria-label="Breadcrumb">
       <ol className="bg-white rounded-md shadow px-6 flex space-x-4">
