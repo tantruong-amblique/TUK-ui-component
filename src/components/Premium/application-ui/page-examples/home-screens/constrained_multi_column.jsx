@@ -52,7 +52,12 @@ const projects = [
   // More projects...
 ]
 const activityItems = [
-  { project: 'Workcation', commit: '2d89f0c8', environment: 'production', time: '1h' },
+  {
+    project: 'Workcation',
+    commit: '2d89f0c8',
+    environment: 'production',
+    time: '1h',
+  },
   // More items...
 ]
 
@@ -60,12 +65,18 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function ConsMulCol() {
   return (
     <>
       {/* Background color split screen for large screens */}
-      <div className="fixed top-0 left-0 w-1/2 h-full bg-white" aria-hidden="true" />
-      <div className="fixed top-0 right-0 w-1/2 h-full bg-gray-50" aria-hidden="true" />
+      <div
+        className="fixed top-0 left-0 w-1/2 h-full bg-white"
+        aria-hidden="true"
+      />
+      <div
+        className="fixed top-0 right-0 w-1/2 h-full bg-gray-50"
+        aria-hidden="true"
+      />
       <div className="relative min-h-screen flex flex-col">
         {/* Navbar */}
         <Disclosure as="nav" className="flex-shrink-0 bg-indigo-600">
@@ -111,7 +122,10 @@ export default function Example() {
                       {open ? (
                         <XIcon className="block h-6 w-6" aria-hidden="true" />
                       ) : (
-                        <MenuAlt1Icon className="block h-6 w-6" aria-hidden="true" />
+                        <MenuAlt1Icon
+                          className="block h-6 w-6"
+                          aria-hidden="true"
+                        />
                       )}
                     </Disclosure.Button>
                   </div>
@@ -239,8 +253,13 @@ export default function Example() {
                           />
                         </div>
                         <div className="space-y-1">
-                          <div className="text-sm font-medium text-gray-900">Debbie Lewis</div>
-                          <a href="#" className="group flex items-center space-x-2.5">
+                          <div className="text-sm font-medium text-gray-900">
+                            Debbie Lewis
+                          </div>
+                          <a
+                            href="#"
+                            className="group flex items-center space-x-2.5"
+                          >
                             <svg
                               className="h-5 w-5 text-gray-400 group-hover:text-gray-500"
                               aria-hidden="true"
@@ -278,12 +297,22 @@ export default function Example() {
                     {/* Meta info */}
                     <div className="flex flex-col space-y-6 sm:flex-row sm:space-y-0 sm:space-x-8 xl:flex-col xl:space-x-0 xl:space-y-6">
                       <div className="flex items-center space-x-2">
-                        <BadgeCheckIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                        <span className="text-sm text-gray-500 font-medium">Pro Member</span>
+                        <BadgeCheckIcon
+                          className="h-5 w-5 text-gray-400"
+                          aria-hidden="true"
+                        />
+                        <span className="text-sm text-gray-500 font-medium">
+                          Pro Member
+                        </span>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <CollectionIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                        <span className="text-sm text-gray-500 font-medium">8 Projects</span>
+                        <CollectionIcon
+                          className="h-5 w-5 text-gray-400"
+                          aria-hidden="true"
+                        />
+                        <span className="text-sm text-gray-500 font-medium">
+                          8 Projects
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -298,9 +327,15 @@ export default function Example() {
                   <h1 className="flex-1 text-lg font-medium">Projects</h1>
                   <Menu as="div" className="relative">
                     <Menu.Button className="w-full bg-white border border-gray-300 rounded-md shadow-sm px-4 py-2 inline-flex justify-center text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                      <SortAscendingIcon className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+                      <SortAscendingIcon
+                        className="mr-3 h-5 w-5 text-gray-400"
+                        aria-hidden="true"
+                      />
                       Sort
-                      <ChevronDownIcon className="ml-2.5 -mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
+                      <ChevronDownIcon
+                        className="ml-2.5 -mr-1.5 h-5 w-5 text-gray-400"
+                        aria-hidden="true"
+                      />
                     </Menu.Button>
                     <Menu.Items className="origin-top-right z-10 absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <div className="py-1">
@@ -309,7 +344,9 @@ export default function Example() {
                             <a
                               href="#"
                               className={classNames(
-                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                active
+                                  ? 'bg-gray-100 text-gray-900'
+                                  : 'text-gray-700',
                                 'block px-4 py-2 text-sm'
                               )}
                             >
@@ -322,7 +359,9 @@ export default function Example() {
                             <a
                               href="#"
                               className={classNames(
-                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                active
+                                  ? 'bg-gray-100 text-gray-900'
+                                  : 'text-gray-700',
                                 'block px-4 py-2 text-sm'
                               )}
                             >
@@ -335,7 +374,9 @@ export default function Example() {
                             <a
                               href="#"
                               className={classNames(
-                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                active
+                                  ? 'bg-gray-100 text-gray-900'
+                                  : 'text-gray-700',
                                 'block px-4 py-2 text-sm'
                               )}
                             >
@@ -376,14 +417,22 @@ export default function Example() {
                           <span className="block">
                             <h2 className="text-sm font-medium">
                               <a href={project.href}>
-                                <span className="absolute inset-0" aria-hidden="true" />
+                                <span
+                                  className="absolute inset-0"
+                                  aria-hidden="true"
+                                />
                                 {project.name}{' '}
-                                <span className="sr-only">{project.active ? 'Running' : 'Not running'}</span>
+                                <span className="sr-only">
+                                  {project.active ? 'Running' : 'Not running'}
+                                </span>
                               </a>
                             </h2>
                           </span>
                         </div>
-                        <a href={project.repoHref} className="relative group flex items-center space-x-2.5">
+                        <a
+                          href={project.repoHref}
+                          className="relative group flex items-center space-x-2.5"
+                        >
                           <svg
                             className="flex-shrink-0 w-5 h-5 text-gray-400 group-hover:text-gray-500"
                             viewBox="0 0 18 18"
@@ -404,7 +453,10 @@ export default function Example() {
                         </a>
                       </div>
                       <div className="sm:hidden">
-                        <ChevronRightIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                        <ChevronRightIcon
+                          className="h-5 w-5 text-gray-400"
+                          aria-hidden="true"
+                        />
                       </div>
                       {/* Repo meta info */}
                       <div className="hidden sm:flex flex-col flex-shrink-0 items-end space-y-3">
@@ -420,7 +472,9 @@ export default function Example() {
                             type="button"
                           >
                             <span className="sr-only">
-                              {project.starred ? 'Add to favorites' : 'Remove from favorites'}
+                              {project.starred
+                                ? 'Add to favorites'
+                                : 'Remove from favorites'}
                             </span>
                             <StarIcon
                               className={classNames(
@@ -469,7 +523,8 @@ export default function Example() {
                             <p className="text-sm text-gray-500">{item.time}</p>
                           </div>
                           <p className="text-sm text-gray-500">
-                            Deployed {item.project} ({item.commit} in master) to {item.environment}
+                            Deployed {item.project} ({item.commit} in master) to{' '}
+                            {item.environment}
                           </p>
                         </div>
                       </div>
@@ -477,7 +532,10 @@ export default function Example() {
                   ))}
                 </ul>
                 <div className="py-4 text-sm border-t border-gray-200">
-                  <a href="#" className="text-indigo-600 font-semibold hover:text-indigo-900">
+                  <a
+                    href="#"
+                    className="text-indigo-600 font-semibold hover:text-indigo-900"
+                  >
                     View all activity <span aria-hidden="true">&rarr;</span>
                   </a>
                 </div>

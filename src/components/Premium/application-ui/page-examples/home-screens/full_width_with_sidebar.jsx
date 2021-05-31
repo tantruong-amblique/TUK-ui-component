@@ -16,7 +16,13 @@
 */
 import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
-import { ClockIcon, HomeIcon, MenuAlt1Icon, ViewListIcon, XIcon } from '@heroicons/react/outline'
+import {
+  ClockIcon,
+  HomeIcon,
+  MenuAlt1Icon,
+  ViewListIcon,
+  XIcon,
+} from '@heroicons/react/outline'
 import {
   ChevronRightIcon,
   DotsVerticalIcon,
@@ -83,7 +89,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function FullWS() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
@@ -160,7 +166,9 @@ export default function Example() {
                       >
                         <item.icon
                           className={classNames(
-                            item.current ? 'text-gray-500' : 'text-gray-400 group-hover:text-gray-500',
+                            item.current
+                              ? 'text-gray-500'
+                              : 'text-gray-400 group-hover:text-gray-500',
                             'mr-3 flex-shrink-0 h-6 w-6'
                           )}
                           aria-hidden="true"
@@ -176,7 +184,11 @@ export default function Example() {
                     >
                       Teams
                     </h3>
-                    <div className="mt-1 space-y-1" role="group" aria-labelledby="teams-headline">
+                    <div
+                      className="mt-1 space-y-1"
+                      role="group"
+                      aria-labelledby="teams-headline"
+                    >
                       {teams.map((team) => (
                         <a
                           key={team.name}
@@ -184,7 +196,10 @@ export default function Example() {
                           className="group flex items-center px-3 py-2 text-base leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
                         >
                           <span
-                            className={classNames(team.bgColorClass, 'w-2.5 h-2.5 mr-4 rounded-full')}
+                            className={classNames(
+                              team.bgColorClass,
+                              'w-2.5 h-2.5 mr-4 rounded-full'
+                            )}
                             aria-hidden="true"
                           />
                           <span className="truncate">{team.name}</span>
@@ -215,7 +230,10 @@ export default function Example() {
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="h-0 flex-1 flex flex-col overflow-y-auto">
             {/* User account dropdown */}
-            <Menu as="div" className="px-3 mt-6 relative inline-block text-left">
+            <Menu
+              as="div"
+              className="px-3 mt-6 relative inline-block text-left"
+            >
               {({ open }) => (
                 <>
                   <div>
@@ -228,8 +246,12 @@ export default function Example() {
                             alt=""
                           />
                           <span className="flex-1 flex flex-col min-w-0">
-                            <span className="text-gray-900 text-sm font-medium truncate">Jessy Schwarz</span>
-                            <span className="text-gray-500 text-sm truncate">@jessyschwarz</span>
+                            <span className="text-gray-900 text-sm font-medium truncate">
+                              Jessy Schwarz
+                            </span>
+                            <span className="text-gray-500 text-sm truncate">
+                              @jessyschwarz
+                            </span>
                           </span>
                         </span>
                         <SelectorIcon
@@ -259,7 +281,9 @@ export default function Example() {
                             <a
                               href="#"
                               className={classNames(
-                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                active
+                                  ? 'bg-gray-100 text-gray-900'
+                                  : 'text-gray-700',
                                 'block px-4 py-2 text-sm'
                               )}
                             >
@@ -272,7 +296,9 @@ export default function Example() {
                             <a
                               href="#"
                               className={classNames(
-                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                active
+                                  ? 'bg-gray-100 text-gray-900'
+                                  : 'text-gray-700',
                                 'block px-4 py-2 text-sm'
                               )}
                             >
@@ -285,7 +311,9 @@ export default function Example() {
                             <a
                               href="#"
                               className={classNames(
-                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                active
+                                  ? 'bg-gray-100 text-gray-900'
+                                  : 'text-gray-700',
                                 'block px-4 py-2 text-sm'
                               )}
                             >
@@ -300,7 +328,9 @@ export default function Example() {
                             <a
                               href="#"
                               className={classNames(
-                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                active
+                                  ? 'bg-gray-100 text-gray-900'
+                                  : 'text-gray-700',
                                 'block px-4 py-2 text-sm'
                               )}
                             >
@@ -313,7 +343,9 @@ export default function Example() {
                             <a
                               href="#"
                               className={classNames(
-                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                active
+                                  ? 'bg-gray-100 text-gray-900'
+                                  : 'text-gray-700',
                                 'block px-4 py-2 text-sm'
                               )}
                             >
@@ -328,7 +360,9 @@ export default function Example() {
                             <a
                               href="#"
                               className={classNames(
-                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                active
+                                  ? 'bg-gray-100 text-gray-900'
+                                  : 'text-gray-700',
                                 'block px-4 py-2 text-sm'
                               )}
                             >
@@ -352,7 +386,10 @@ export default function Example() {
                   className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
                   aria-hidden="true"
                 >
-                  <SearchIcon className="mr-3 h-4 w-4 text-gray-400" aria-hidden="true" />
+                  <SearchIcon
+                    className="mr-3 h-4 w-4 text-gray-400"
+                    aria-hidden="true"
+                  />
                 </div>
                 <input
                   type="text"
@@ -371,14 +408,18 @@ export default function Example() {
                     key={item.name}
                     href={item.href}
                     className={classNames(
-                      item.current ? 'bg-gray-200 text-gray-900' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50',
+                      item.current
+                        ? 'bg-gray-200 text-gray-900'
+                        : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50',
                       'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
                     )}
                     aria-current={item.current ? 'page' : undefined}
                   >
                     <item.icon
                       className={classNames(
-                        item.current ? 'text-gray-500' : 'text-gray-400 group-hover:text-gray-500',
+                        item.current
+                          ? 'text-gray-500'
+                          : 'text-gray-400 group-hover:text-gray-500',
                         'mr-3 flex-shrink-0 h-6 w-6'
                       )}
                       aria-hidden="true"
@@ -389,10 +430,17 @@ export default function Example() {
               </div>
               <div className="mt-8">
                 {/* Secondary navigation */}
-                <h3 className="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider" id="teams-headline">
+                <h3
+                  className="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider"
+                  id="teams-headline"
+                >
                   Teams
                 </h3>
-                <div className="mt-1 space-y-1" role="group" aria-labelledby="teams-headline">
+                <div
+                  className="mt-1 space-y-1"
+                  role="group"
+                  aria-labelledby="teams-headline"
+                >
                   {teams.map((team) => (
                     <a
                       key={team.name}
@@ -400,7 +448,10 @@ export default function Example() {
                       className="group flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                     >
                       <span
-                        className={classNames(team.bgColorClass, 'w-2.5 h-2.5 mr-4 rounded-full')}
+                        className={classNames(
+                          team.bgColorClass,
+                          'w-2.5 h-2.5 mr-4 rounded-full'
+                        )}
                         aria-hidden="true"
                       />
                       <span className="truncate">{team.name}</span>
@@ -478,7 +529,9 @@ export default function Example() {
                               <a
                                 href="#"
                                 className={classNames(
-                                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                  active
+                                    ? 'bg-gray-100 text-gray-900'
+                                    : 'text-gray-700',
                                   'block px-4 py-2 text-sm'
                                 )}
                               >
@@ -491,7 +544,9 @@ export default function Example() {
                               <a
                                 href="#"
                                 className={classNames(
-                                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                  active
+                                    ? 'bg-gray-100 text-gray-900'
+                                    : 'text-gray-700',
                                   'block px-4 py-2 text-sm'
                                 )}
                               >
@@ -504,7 +559,9 @@ export default function Example() {
                               <a
                                 href="#"
                                 className={classNames(
-                                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                  active
+                                    ? 'bg-gray-100 text-gray-900'
+                                    : 'text-gray-700',
                                   'block px-4 py-2 text-sm'
                                 )}
                               >
@@ -519,7 +576,9 @@ export default function Example() {
                               <a
                                 href="#"
                                 className={classNames(
-                                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                  active
+                                    ? 'bg-gray-100 text-gray-900'
+                                    : 'text-gray-700',
                                   'block px-4 py-2 text-sm'
                                 )}
                               >
@@ -532,7 +591,9 @@ export default function Example() {
                               <a
                                 href="#"
                                 className={classNames(
-                                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                  active
+                                    ? 'bg-gray-100 text-gray-900'
+                                    : 'text-gray-700',
                                   'block px-4 py-2 text-sm'
                                 )}
                               >
@@ -547,7 +608,9 @@ export default function Example() {
                               <a
                                 href="#"
                                 className={classNames(
-                                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                  active
+                                    ? 'bg-gray-100 text-gray-900'
+                                    : 'text-gray-700',
                                   'block px-4 py-2 text-sm'
                                 )}
                               >
@@ -568,7 +631,9 @@ export default function Example() {
           {/* Page title & actions */}
           <div className="border-b border-gray-200 px-4 py-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
             <div className="flex-1 min-w-0">
-              <h1 className="text-lg font-medium leading-6 text-gray-900 sm:truncate">Home</h1>
+              <h1 className="text-lg font-medium leading-6 text-gray-900 sm:truncate">
+                Home
+              </h1>
             </div>
             <div className="mt-4 flex sm:mt-0 sm:ml-4">
               <button
@@ -587,10 +652,15 @@ export default function Example() {
           </div>
           {/* Pinned projects */}
           <div className="px-4 mt-6 sm:px-6 lg:px-8">
-            <h2 className="text-gray-500 text-xs font-medium uppercase tracking-wide">Pinned Projects</h2>
+            <h2 className="text-gray-500 text-xs font-medium uppercase tracking-wide">
+              Pinned Projects
+            </h2>
             <ul className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 xl:grid-cols-4 mt-3">
               {pinnedProjects.map((project) => (
-                <li key={project.id} className="relative col-span-1 flex shadow-sm rounded-md">
+                <li
+                  key={project.id}
+                  className="relative col-span-1 flex shadow-sm rounded-md"
+                >
                   <div
                     className={classNames(
                       project.bgColorClass,
@@ -601,17 +671,25 @@ export default function Example() {
                   </div>
                   <div className="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
                     <div className="flex-1 px-4 py-2 text-sm truncate">
-                      <a href="#" className="text-gray-900 font-medium hover:text-gray-600">
+                      <a
+                        href="#"
+                        className="text-gray-900 font-medium hover:text-gray-600"
+                      >
                         {project.title}
                       </a>
-                      <p className="text-gray-500">{project.totalMembers} Members</p>
+                      <p className="text-gray-500">
+                        {project.totalMembers} Members
+                      </p>
                     </div>
                     <Menu as="div" className="flex-shrink-0 pr-2">
                       {({ open }) => (
                         <>
                           <Menu.Button className="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
                             <span className="sr-only">Open options</span>
-                            <DotsVerticalIcon className="w-5 h-5" aria-hidden="true" />
+                            <DotsVerticalIcon
+                              className="w-5 h-5"
+                              aria-hidden="true"
+                            />
                           </Menu.Button>
                           <Transition
                             show={open}
@@ -633,7 +711,9 @@ export default function Example() {
                                     <a
                                       href="#"
                                       className={classNames(
-                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                        active
+                                          ? 'bg-gray-100 text-gray-900'
+                                          : 'text-gray-700',
                                         'block px-4 py-2 text-sm'
                                       )}
                                     >
@@ -648,7 +728,9 @@ export default function Example() {
                                     <a
                                       href="#"
                                       className={classNames(
-                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                        active
+                                          ? 'bg-gray-100 text-gray-900'
+                                          : 'text-gray-700',
                                         'block px-4 py-2 text-sm'
                                       )}
                                     >
@@ -661,7 +743,9 @@ export default function Example() {
                                     <a
                                       href="#"
                                       className={classNames(
-                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                        active
+                                          ? 'bg-gray-100 text-gray-900'
+                                          : 'text-gray-700',
                                         'block px-4 py-2 text-sm'
                                       )}
                                     >
@@ -684,19 +768,30 @@ export default function Example() {
           {/* Projects list (only on smallest breakpoint) */}
           <div className="mt-10 sm:hidden">
             <div className="px-4 sm:px-6">
-              <h2 className="text-gray-500 text-xs font-medium uppercase tracking-wide">Projects</h2>
+              <h2 className="text-gray-500 text-xs font-medium uppercase tracking-wide">
+                Projects
+              </h2>
             </div>
             <ul className="mt-3 border-t border-gray-200 divide-y divide-gray-100">
               {projects.map((project) => (
                 <li key={project.id}>
-                  <a href="#" className="group flex items-center justify-between px-4 py-4 hover:bg-gray-50 sm:px-6">
+                  <a
+                    href="#"
+                    className="group flex items-center justify-between px-4 py-4 hover:bg-gray-50 sm:px-6"
+                  >
                     <span className="flex items-center truncate space-x-3">
                       <span
-                        className={classNames(project.bgColorClass, 'w-2.5 h-2.5 flex-shrink-0 rounded-full')}
+                        className={classNames(
+                          project.bgColorClass,
+                          'w-2.5 h-2.5 flex-shrink-0 rounded-full'
+                        )}
                         aria-hidden="true"
                       />
                       <span className="font-medium truncate text-sm leading-6">
-                        {project.title} <span className="truncate font-normal text-gray-500">in {project.team}</span>
+                        {project.title}{' '}
+                        <span className="truncate font-normal text-gray-500">
+                          in {project.team}
+                        </span>
                       </span>
                     </span>
                     <ChevronRightIcon
@@ -733,12 +828,18 @@ export default function Example() {
                       <td className="px-6 py-3 max-w-0 w-full whitespace-nowrap text-sm font-medium text-gray-900">
                         <div className="flex items-center space-x-3 lg:pl-2">
                           <div
-                            className={classNames(project.bgColorClass, 'flex-shrink-0 w-2.5 h-2.5 rounded-full')}
+                            className={classNames(
+                              project.bgColorClass,
+                              'flex-shrink-0 w-2.5 h-2.5 rounded-full'
+                            )}
                             aria-hidden="true"
                           />
                           <a href="#" className="truncate hover:text-gray-600">
                             <span>
-                              {project.title} <span className="text-gray-500 font-normal">in {project.team}</span>
+                              {project.title}{' '}
+                              <span className="text-gray-500 font-normal">
+                                in {project.team}
+                              </span>
                             </span>
                           </a>
                         </div>
@@ -766,12 +867,18 @@ export default function Example() {
                         {project.lastUpdated}
                       </td>
                       <td className="pr-6">
-                        <Menu as="div" className="relative flex justify-end items-center">
+                        <Menu
+                          as="div"
+                          className="relative flex justify-end items-center"
+                        >
                           {({ open }) => (
                             <>
                               <Menu.Button className="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
                                 <span className="sr-only">Open options</span>
-                                <DotsVerticalIcon className="w-5 h-5" aria-hidden="true" />
+                                <DotsVerticalIcon
+                                  className="w-5 h-5"
+                                  aria-hidden="true"
+                                />
                               </Menu.Button>
                               <Transition
                                 show={open}
@@ -793,7 +900,9 @@ export default function Example() {
                                         <a
                                           href="#"
                                           className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            active
+                                              ? 'bg-gray-100 text-gray-900'
+                                              : 'text-gray-700',
                                             'group flex items-center px-4 py-2 text-sm'
                                           )}
                                         >
@@ -810,7 +919,9 @@ export default function Example() {
                                         <a
                                           href="#"
                                           className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            active
+                                              ? 'bg-gray-100 text-gray-900'
+                                              : 'text-gray-700',
                                             'group flex items-center px-4 py-2 text-sm'
                                           )}
                                         >
@@ -827,7 +938,9 @@ export default function Example() {
                                         <a
                                           href="#"
                                           className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            active
+                                              ? 'bg-gray-100 text-gray-900'
+                                              : 'text-gray-700',
                                             'group flex items-center px-4 py-2 text-sm'
                                           )}
                                         >
@@ -846,7 +959,9 @@ export default function Example() {
                                         <a
                                           href="#"
                                           className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            active
+                                              ? 'bg-gray-100 text-gray-900'
+                                              : 'text-gray-700',
                                             'group flex items-center px-4 py-2 text-sm'
                                           )}
                                         >

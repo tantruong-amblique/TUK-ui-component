@@ -70,16 +70,25 @@ const team = [
   },
 ]
 const settings = [
-  { name: 'Public access', description: 'This project would be available to anyone who has the link' },
-  { name: 'Private to Project Members', description: 'Only members of this project would be able to access' },
-  { name: 'Private to you', description: 'You are the only one able to access this project' },
+  {
+    name: 'Public access',
+    description: 'This project would be available to anyone who has the link',
+  },
+  {
+    name: 'Private to Project Members',
+    description: 'Only members of this project would be able to access',
+  },
+  {
+    name: 'Private to you',
+    description: 'You are the only one able to access this project',
+  },
 ]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function BrandBread() {
   const [selected, setSelected] = useState(settings[0])
 
   return (
@@ -116,7 +125,10 @@ export default function Example() {
                     </label>
                     <div className="relative text-white focus-within:text-gray-400">
                       <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                        <SearchIcon className="flex-shrink-0 h-5 w-5" aria-hidden="true" />
+                        <SearchIcon
+                          className="flex-shrink-0 h-5 w-5"
+                          aria-hidden="true"
+                        />
                       </div>
                       <input
                         id="search"
@@ -152,7 +164,11 @@ export default function Example() {
                         <div>
                           <Menu.Button className="bg-light-blue-500 rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-light-blue-500 focus:ring-white">
                             <span className="sr-only">Open user menu</span>
-                            <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                            <img
+                              className="h-8 w-8 rounded-full"
+                              src={user.imageUrl}
+                              alt=""
+                            />
                           </Menu.Button>
                         </div>
                         <Transition
@@ -208,11 +224,19 @@ export default function Example() {
               <div className="pt-4 pb-3 border-t border-light-blue-500">
                 <div className="flex items-center px-4">
                   <div className="flex-shrink-0">
-                    <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                    <img
+                      className="h-10 w-10 rounded-full"
+                      src={user.imageUrl}
+                      alt=""
+                    />
                   </div>
                   <div className="ml-3">
-                    <div className="text-base font-medium text-white">{user.name}</div>
-                    <div className="text-sm font-medium text-light-blue-200">{user.email}</div>
+                    <div className="text-base font-medium text-white">
+                      {user.name}
+                    </div>
+                    <div className="text-sm font-medium text-light-blue-200">
+                      {user.email}
+                    </div>
                   </div>
                   <button className="ml-auto flex-shrink-0 bg-light-blue-500 rounded-full p-1 text-light-blue-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-light-blue-500 focus:ring-white">
                     <span className="sr-only">View notifications</span>
@@ -237,12 +261,18 @@ export default function Example() {
       </Disclosure>
 
       {/* Breadcrumb */}
-      <nav className="hidden bg-white border-b border-gray-200 lg:flex" aria-label="Breadcrumb">
+      <nav
+        className="hidden bg-white border-b border-gray-200 lg:flex"
+        aria-label="Breadcrumb"
+      >
         <ol className="max-w-screen-xl w-full mx-auto px-4 flex space-x-4 sm:px-6 lg:px-8">
           <li className="flex">
             <div className="flex items-center">
               <a href="#" className="text-gray-400 hover:text-gray-500">
-                <HomeIcon className="flex-shrink-0 h-5 w-5" aria-hidden="true" />
+                <HomeIcon
+                  className="flex-shrink-0 h-5 w-5"
+                  aria-hidden="true"
+                />
                 <span className="sr-only">Home</span>
               </a>
             </div>
@@ -277,14 +307,20 @@ export default function Example() {
         <form>
           <div className="space-y-6">
             <div>
-              <h1 className="text-lg leading-6 font-medium text-gray-900">Project Settings</h1>
+              <h1 className="text-lg leading-6 font-medium text-gray-900">
+                Project Settings
+              </h1>
               <p className="mt-1 text-sm text-gray-500">
-                Let’s get started by filling in the information below to create your new project.
+                Let’s get started by filling in the information below to create
+                your new project.
               </p>
             </div>
 
             <div>
-              <label htmlFor="project_name" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="project_name"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Project Name
               </label>
               <div className="mt-1">
@@ -299,7 +335,10 @@ export default function Example() {
             </div>
 
             <div>
-              <label htmlFor="description" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="description"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Description
               </label>
               <div className="mt-1">
@@ -315,7 +354,10 @@ export default function Example() {
 
             <div className="space-y-2">
               <div className="space-y-1">
-                <label htmlFor="add_team_members" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="add_team_members"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Add Team Members
                 </label>
                 <p id="add_team_members_helper" className="sr-only">
@@ -337,7 +379,10 @@ export default function Example() {
                       type="button"
                       className="bg-white inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-light-blue-500"
                     >
-                      <PlusIcon className="-ml-2 mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
+                      <PlusIcon
+                        className="-ml-2 mr-1 h-5 w-5 text-gray-400"
+                        aria-hidden="true"
+                      />
                       <span>Add</span>
                     </button>
                   </span>
@@ -348,10 +393,18 @@ export default function Example() {
                 <ul className="divide-y divide-gray-200">
                   {team.map((person) => (
                     <li key={person.email} className="py-4 flex">
-                      <img className="h-10 w-10 rounded-full" src={person.imageUrl} alt="" />
+                      <img
+                        className="h-10 w-10 rounded-full"
+                        src={person.imageUrl}
+                        alt=""
+                      />
                       <div className="ml-3 flex flex-col">
-                        <span className="text-sm font-medium text-gray-900">{person.name}</span>
-                        <span className="text-sm text-gray-500">{person.email}</span>
+                        <span className="text-sm font-medium text-gray-900">
+                          {person.name}
+                        </span>
+                        <span className="text-sm text-gray-500">
+                          {person.email}
+                        </span>
                       </div>
                     </li>
                   ))}
@@ -360,7 +413,9 @@ export default function Example() {
             </div>
 
             <RadioGroup value={selected} onChange={setSelected}>
-              <RadioGroup.Label className="text-sm font-medium text-gray-900">Privacy</RadioGroup.Label>
+              <RadioGroup.Label className="text-sm font-medium text-gray-900">
+                Privacy
+              </RadioGroup.Label>
 
               <div className="mt-1 bg-white rounded-md shadow-sm -space-y-px">
                 {settings.map((setting, settingIdx) => (
@@ -370,8 +425,12 @@ export default function Example() {
                     className={({ checked }) =>
                       classNames(
                         settingIdx === 0 ? 'rounded-tl-md rounded-tr-md' : '',
-                        settingIdx === settings.length - 1 ? 'rounded-bl-md rounded-br-md' : '',
-                        checked ? 'bg-light-blue-50 border-light-blue-200 z-10' : 'border-gray-200',
+                        settingIdx === settings.length - 1
+                          ? 'rounded-bl-md rounded-br-md'
+                          : '',
+                        checked
+                          ? 'bg-light-blue-50 border-light-blue-200 z-10'
+                          : 'border-gray-200',
                         'relative border p-4 flex cursor-pointer focus:outline-none'
                       )
                     }
@@ -380,8 +439,12 @@ export default function Example() {
                       <>
                         <span
                           className={classNames(
-                            checked ? 'bg-light-blue-600 border-transparent' : 'bg-white border-gray-300',
-                            active ? 'ring-2 ring-offset-2 ring-light-blue-500' : '',
+                            checked
+                              ? 'bg-light-blue-600 border-transparent'
+                              : 'bg-white border-gray-300',
+                            active
+                              ? 'ring-2 ring-offset-2 ring-light-blue-500'
+                              : '',
                             'h-4 w-4 mt-0.5 cursor-pointer rounded-full border flex items-center justify-center'
                           )}
                           aria-hidden="true"
@@ -400,7 +463,10 @@ export default function Example() {
                           </RadioGroup.Label>
                           <RadioGroup.Description
                             as="span"
-                            className={classNames(checked ? 'text-light-blue-700' : 'text-gray-500', 'block text-sm')}
+                            className={classNames(
+                              checked ? 'text-light-blue-700' : 'text-gray-500',
+                              'block text-sm'
+                            )}
                           >
                             {setting.description}
                           </RadioGroup.Description>
@@ -413,7 +479,10 @@ export default function Example() {
             </RadioGroup>
 
             <div>
-              <label htmlFor="tags" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="tags"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Tags
               </label>
               <input
