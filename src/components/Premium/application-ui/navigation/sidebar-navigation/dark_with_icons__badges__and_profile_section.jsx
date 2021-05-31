@@ -1,5 +1,12 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { CalendarIcon, ChartBarIcon, FolderIcon, HomeIcon, InboxIcon, UsersIcon } from '@heroicons/react/outline'
+import {
+  CalendarIcon,
+  ChartBarIcon,
+  FolderIcon,
+  HomeIcon,
+  InboxIcon,
+  UsersIcon,
+} from '@heroicons/react/outline'
 
 const navigation = [
   { name: 'Dashboard', icon: HomeIcon, href: '#', current: true },
@@ -14,7 +21,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function DarkWIB() {
   return (
     <div className="flex flex-col h-0 flex-1 bg-gray-800">
       <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
@@ -25,19 +32,26 @@ export default function Example() {
             alt="Workflow"
           />
         </div>
-        <nav className="mt-5 flex-1 px-2 bg-gray-800 space-y-1" aria-label="Sidebar">
+        <nav
+          className="mt-5 flex-1 px-2 bg-gray-800 space-y-1"
+          aria-label="Sidebar"
+        >
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                item.current
+                  ? 'bg-gray-900 text-white'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                 'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
               )}
             >
               <item.icon
                 className={classNames(
-                  item.current ? 'text-gray-300' : 'text-gray-400 group-hover:text-gray-300',
+                  item.current
+                    ? 'text-gray-300'
+                    : 'text-gray-400 group-hover:text-gray-300',
                   'mr-3 flex-shrink-0 h-6 w-6'
                 )}
                 aria-hidden="true"
@@ -46,7 +60,9 @@ export default function Example() {
               {item.count ? (
                 <span
                   className={classNames(
-                    item.current ? 'bg-gray-800' : 'bg-gray-900 group-hover:bg-gray-800',
+                    item.current
+                      ? 'bg-gray-800'
+                      : 'bg-gray-900 group-hover:bg-gray-800',
                     'ml-3 inline-block py-0.5 px-3 text-xs font-medium rounded-full'
                   )}
                 >
@@ -69,7 +85,9 @@ export default function Example() {
             </div>
             <div className="ml-3">
               <p className="text-sm font-medium text-white">Tom Cook</p>
-              <p className="text-xs font-medium text-gray-300 group-hover:text-gray-200">View profile</p>
+              <p className="text-xs font-medium text-gray-300 group-hover:text-gray-200">
+                View profile
+              </p>
             </div>
           </div>
         </a>

@@ -7,7 +7,7 @@ import SimpleWihSlash from './simple_with_slashes'
 const BreadScrumbs = () => {
   return (
     <div>
-      <div className="text-4xl animate-bounce m-3 font-semibold">
+      <div className="text-4xl animate-pulse m-3 font-semibold">
         breadcrumbs
       </div>
       <div className="text-xl animate-bounce  m-3 font-semibold">

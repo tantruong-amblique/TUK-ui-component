@@ -1,5 +1,12 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { CalendarIcon, ChartBarIcon, FolderIcon, HomeIcon, InboxIcon, UsersIcon } from '@heroicons/react/outline'
+import {
+  CalendarIcon,
+  ChartBarIcon,
+  FolderIcon,
+  HomeIcon,
+  InboxIcon,
+  UsersIcon,
+} from '@heroicons/react/outline'
 
 const navigation = [
   { name: 'Dashboard', icon: HomeIcon, href: '#', current: true },
@@ -14,7 +21,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function BrandWIB() {
   return (
     <div className="flex flex-col h-0 flex-1 bg-indigo-700">
       <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
@@ -31,11 +38,16 @@ export default function Example() {
               key={item.name}
               href={item.href}
               className={classNames(
-                item.current ? 'bg-indigo-800 text-white' : 'text-indigo-100 hover:bg-indigo-600 hover:bg-opacity-75',
+                item.current
+                  ? 'bg-indigo-800 text-white'
+                  : 'text-indigo-100 hover:bg-indigo-600 hover:bg-opacity-75',
                 'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
               )}
             >
-              <item.icon className="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300" aria-hidden="true" />
+              <item.icon
+                className="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300"
+                aria-hidden="true"
+              />
               <span className="flex-1">{item.name}</span>
               {item.count ? (
                 <span
@@ -63,7 +75,9 @@ export default function Example() {
             </div>
             <div className="ml-3">
               <p className="text-sm font-medium text-white">Tom Cook</p>
-              <p className="text-xs font-medium text-indigo-200 group-hover:text-white">View profile</p>
+              <p className="text-xs font-medium text-indigo-200 group-hover:text-white">
+                View profile
+              </p>
             </div>
           </div>
         </a>

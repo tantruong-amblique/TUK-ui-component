@@ -14,9 +14,7 @@ import WithSIC from './with_search_in_column_layout'
 const Navbars = () => {
   return (
     <div>
-      <div className="text-4xlg animate-pulse m-3 font-semibold">
-        Description Lits
-      </div>
+      <div className="text-4xl animate-pulse m-3 font-semibold">Navbars</div>
       <div className="text-lg animate-bounce  m-3 font-semibold">
         dark_with_quick_action
       </div>

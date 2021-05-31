@@ -1,5 +1,12 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { CalendarIcon, ChartBarIcon, FolderIcon, HomeIcon, InboxIcon, UsersIcon } from '@heroicons/react/outline'
+import {
+  CalendarIcon,
+  ChartBarIcon,
+  FolderIcon,
+  HomeIcon,
+  InboxIcon,
+  UsersIcon,
+} from '@heroicons/react/outline'
 
 const navigation = [
   { name: 'Dashboard', icon: HomeIcon, href: '#', current: true },
@@ -14,7 +21,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function SimpleWIC() {
   return (
     <div className="flex flex-col h-0 flex-1 border-r border-gray-200 bg-white">
       <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
@@ -25,7 +32,10 @@ export default function Example() {
             alt="Workflow"
           />
         </div>
-        <nav className="mt-5 flex-1 px-2 bg-white space-y-1" aria-label="Sidebar">
+        <nav
+          className="mt-5 flex-1 px-2 bg-white space-y-1"
+          aria-label="Sidebar"
+        >
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -39,7 +49,9 @@ export default function Example() {
             >
               <item.icon
                 className={classNames(
-                  item.current ? 'text-gray-500' : 'text-gray-400 group-hover:text-gray-500',
+                  item.current
+                    ? 'text-gray-500'
+                    : 'text-gray-400 group-hover:text-gray-500',
                   'mr-3 flex-shrink-0 h-6 w-6'
                 )}
                 aria-hidden="true"
@@ -48,7 +60,9 @@ export default function Example() {
               {item.count ? (
                 <span
                   className={classNames(
-                    item.current ? 'bg-white' : 'bg-gray-100 group-hover:bg-gray-200',
+                    item.current
+                      ? 'bg-white'
+                      : 'bg-gray-100 group-hover:bg-gray-200',
                     'ml-3 inline-block py-0.5 px-3 text-xs font-medium rounded-full'
                   )}
                 >
@@ -70,8 +84,12 @@ export default function Example() {
               />
             </div>
             <div className="ml-3">
-              <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">Tom Cook</p>
-              <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">View profile</p>
+              <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
+                Tom Cook
+              </p>
+              <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
+                View profile
+              </p>
             </div>
           </div>
         </a>
