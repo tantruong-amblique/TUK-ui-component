@@ -25,7 +25,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function TabsPOG() {
   return (
     <div>
       <div className="sm:hidden">
@@ -50,7 +50,9 @@ export default function Example() {
               key={tab.name}
               href={tab.href}
               className={classNames(
-                tab.current ? 'bg-gray-200 text-gray-800' : 'text-gray-600 hover:text-gray-800',
+                tab.current
+                  ? 'bg-gray-200 text-gray-800'
+                  : 'text-gray-600 hover:text-gray-800',
                 'px-3 py-2 font-medium text-sm rounded-md'
               )}
               aria-current={tab.current ? 'page' : undefined}

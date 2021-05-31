@@ -3,6 +3,8 @@ import BreadScrumbs from './breadcrumbs/BreadScrumbs'
 import Navbars from './navbars/Navbars'
 import Pagination from './pagination/Pagination'
 import SideNav from './sidebar-navigation/SideNav'
+import Steps from './steps/Steps'
+import Tabs from './tabs/Tabs'
 
 const Navigation = () => {
   return (
@@ -10,7 +12,9 @@ const Navigation = () => {
       <BreadScrumbs />
       <Navbars />
       <Pagination />
-      <SideNav />
+      {/** <SideNav /> */}
+      <Steps />
+      <Tabs />
     </div>
   )
 }

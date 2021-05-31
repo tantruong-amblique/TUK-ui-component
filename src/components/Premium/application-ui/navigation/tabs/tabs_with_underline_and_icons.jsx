@@ -14,7 +14,12 @@
   }
   ```
 */
-import { CreditCardIcon, OfficeBuildingIcon, UserIcon, UsersIcon } from '@heroicons/react/solid'
+import {
+  CreditCardIcon,
+  OfficeBuildingIcon,
+  UserIcon,
+  UsersIcon,
+} from '@heroicons/react/solid'
 
 const tabs = [
   { name: 'My Account', href: '#', icon: UserIcon, current: false },
@@ -27,7 +32,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function TabsWUAI() {
   return (
     <div>
       <div className="sm:hidden">
@@ -62,7 +67,9 @@ export default function Example() {
               >
                 <tab.icon
                   className={classNames(
-                    tab.current ? 'text-indigo-500' : 'text-gray-400 group-hover:text-gray-500',
+                    tab.current
+                      ? 'text-indigo-500'
+                      : 'text-gray-400 group-hover:text-gray-500',
                     '-ml-0.5 mr-2 h-5 w-5'
                   )}
                   aria-hidden="true"

@@ -26,7 +26,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function TabsWUB() {
   return (
     <div>
       <div className="sm:hidden">
@@ -63,7 +63,9 @@ export default function Example() {
                 {tab.count ? (
                   <span
                     className={classNames(
-                      tab.current ? 'bg-indigo-100 text-indigo-600' : 'bg-gray-100 text-gray-900',
+                      tab.current
+                        ? 'bg-indigo-100 text-indigo-600'
+                        : 'bg-gray-100 text-gray-900',
                       'hidden ml-3 py-0.5 px-2.5 rounded-full text-xs font-medium md:inline-block'
                     )}
                   >
