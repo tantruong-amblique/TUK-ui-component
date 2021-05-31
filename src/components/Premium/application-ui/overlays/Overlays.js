@@ -6,7 +6,7 @@ import SlideOvers from './slide-overs/SlideOvers'
 const Overlays = () => {
   return (
     <div>
-      <h1>Hello World !</h1>
+      <h1>Overlay !</h1>
       {/*<Modals />*/}
       {/*<Notification />*/}
       {/*<SlideOvers /> */}
