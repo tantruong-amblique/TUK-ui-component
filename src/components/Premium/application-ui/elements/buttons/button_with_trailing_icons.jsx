@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { MailIcon } from '@heroicons/react/solid'
 
-export default function Example() {
+export default function BtnWTI() {
   return (
     <>
       <button

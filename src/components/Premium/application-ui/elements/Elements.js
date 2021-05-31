@@ -2,6 +2,7 @@ import React from 'react'
 import Avatars from './avatars/Avatars'
 import BadGes from './badges/BadGes'
 import ButtonGroupsIcon from './button-groups/ButtonGroupsIcon'
+import Buttons from './buttons/Buttons'
 import DropDwns from './dropdowns/DropDwns'
 
 const Elements = () => {
@@ -11,6 +12,7 @@ const Elements = () => {
       <BadGes />
       <ButtonGroupsIcon />
       <DropDwns />
+      <Buttons />
     </div>
   )
 }

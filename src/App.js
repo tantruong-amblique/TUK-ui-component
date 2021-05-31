@@ -9,6 +9,7 @@ const App = () => {
     <main className="bg-pink-50">
       <ApplicationShell />
       <Elements />
+
       <DataDisplay />
       <Navigation />
     </main>

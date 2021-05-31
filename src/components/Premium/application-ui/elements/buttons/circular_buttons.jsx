@@ -2,7 +2,7 @@
 import { PlusIcon as PlusIconSolid } from '@heroicons/react/solid'
 import { PlusIcon as PlusIconOutline } from '@heroicons/react/outline'
 
-export default function Example() {
+export default function BTNCir() {
   return (
     <>
       <button
