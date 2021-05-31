@@ -12,7 +12,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function SimpNavVer() {
   return (
     <nav className="space-y-1" aria-label="Sidebar">
       {navigation.map((item) => (
@@ -20,7 +20,9 @@ export default function Example() {
           key={item.name}
           href={item.href}
           className={classNames(
-            item.current ? 'bg-gray-100 text-gray-900' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
+            item.current
+              ? 'bg-gray-100 text-gray-900'
+              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
             'flex items-center px-3 py-2 text-sm font-medium rounded-md'
           )}
           aria-current={item.current ? 'page' : undefined}

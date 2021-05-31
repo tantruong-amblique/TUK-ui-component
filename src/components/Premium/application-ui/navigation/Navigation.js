@@ -5,6 +5,7 @@ import Pagination from './pagination/Pagination'
 import SideNav from './sidebar-navigation/SideNav'
 import Steps from './steps/Steps'
 import Tabs from './tabs/Tabs'
+import VerticalNavigation from './vertical-navigation/VerticalNavigation'
 
 const Navigation = () => {
   return (
@@ -15,6 +16,7 @@ const Navigation = () => {
       {/** <SideNav /> */}
       <Steps />
       <Tabs />
+      <VerticalNavigation />
     </div>
   )
 }
