@@ -93,7 +93,8 @@ const messages = [
   },
   {
     id: 2,
-    subject: 'Nemo mollitia repudiandae adipisci explicabo optio consequatur tempora ut nihil',
+    subject:
+      'Nemo mollitia repudiandae adipisci explicabo optio consequatur tempora ut nihil',
     sender: 'Virginia Abshire',
     href: '#',
     date: '1d ago',
@@ -103,7 +104,8 @@ const messages = [
   },
   {
     id: 3,
-    subject: 'Doloremque reprehenderit et harum quas explicabo nulla architecto dicta voluptatibus',
+    subject:
+      'Doloremque reprehenderit et harum quas explicabo nulla architecto dicta voluptatibus',
     sender: 'Kyle Gulgowski',
     href: '#',
     date: '1d ago',
@@ -133,7 +135,8 @@ const messages = [
   },
   {
     id: 6,
-    subject: 'Est ratione molestiae modi maiores consequatur eligendi et excepturi magni',
+    subject:
+      'Est ratione molestiae modi maiores consequatur eligendi et excepturi magni',
     sender: 'Dolores Morissette',
     href: '#',
     date: '1d ago',
@@ -199,16 +202,14 @@ const message = {
       author: 'Monica White',
       date: 'Wednesday at 4:35pm',
       datetime: '2021-01-27T16:35',
-      body:
-        '\n            <p>\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at ultricies tincidunt elit et, enim. Habitant nunc, adipiscing non fermentum, sed est a, aliquet. Lorem in vel libero vel augue aliquet dui commodo.\n            </p>\n            <p>\n              Nec malesuada sed sit ut aliquet. Cras ac pharetra, sapien purus vitae vestibulum auctor faucibus ullamcorper. Leo quam tincidunt porttitor neque, velit sed. Tortor mauris ornare ut tellus sed aliquet amet venenatis condimentum. Convallis accumsan et nunc eleifend.\n            </p>\n            <p>\n              <strong style="font-weight: 600;">Monica White</strong><br/>\n              Customer Service\n            </p>\n          ',
+      body: '\n            <p>\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at ultricies tincidunt elit et, enim. Habitant nunc, adipiscing non fermentum, sed est a, aliquet. Lorem in vel libero vel augue aliquet dui commodo.\n            </p>\n            <p>\n              Nec malesuada sed sit ut aliquet. Cras ac pharetra, sapien purus vitae vestibulum auctor faucibus ullamcorper. Leo quam tincidunt porttitor neque, velit sed. Tortor mauris ornare ut tellus sed aliquet amet venenatis condimentum. Convallis accumsan et nunc eleifend.\n            </p>\n            <p>\n              <strong style="font-weight: 600;">Monica White</strong><br/>\n              Customer Service\n            </p>\n          ',
     },
     {
       id: 3,
       author: 'Joe Armstrong',
       date: 'Wednesday at 4:09pm',
       datetime: '2021-01-27T16:09',
-      body:
-        '\n            <p>\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at ultricies tincidunt elit et, enim. Habitant nunc, adipiscing non fermentum, sed est a, aliquet. Lorem in vel libero vel augue aliquet dui commodo.\n            </p>\n            <p>\n              Nec malesuada sed sit ut aliquet. Cras ac pharetra, sapien purus vitae vestibulum auctor faucibus ullamcorper. Leo quam tincidunt porttitor neque, velit sed. Tortor mauris ornare ut tellus sed aliquet amet venenatis condimentum. Convallis accumsan et nunc eleifend.\n            </p>\n            <p>\n              – Joe\n            </p>\n          ',
+      body: '\n            <p>\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at ultricies tincidunt elit et, enim. Habitant nunc, adipiscing non fermentum, sed est a, aliquet. Lorem in vel libero vel augue aliquet dui commodo.\n            </p>\n            <p>\n              Nec malesuada sed sit ut aliquet. Cras ac pharetra, sapien purus vitae vestibulum auctor faucibus ullamcorper. Leo quam tincidunt porttitor neque, velit sed. Tortor mauris ornare ut tellus sed aliquet amet venenatis condimentum. Convallis accumsan et nunc eleifend.\n            </p>\n            <p>\n              – Joe\n            </p>\n          ',
     },
   ],
 }
@@ -217,7 +218,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function MultiCI() {
   const [open, setOpen] = useState(false)
 
   return (
@@ -256,7 +257,10 @@ export default function Example() {
               <option value="/drafts">Drafts</option>
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-2">
-              <ChevronDownIcon className="h-5 w-5 text-gray-500" aria-hidden="true" />
+              <ChevronDownIcon
+                className="h-5 w-5 text-gray-500"
+                aria-hidden="true"
+              />
             </div>
           </div>
         </div>
@@ -301,7 +305,10 @@ export default function Example() {
                       <>
                         <Menu.Button className="flex items-center text-sm font-medium text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">
                           <span>{item.name}</span>
-                          <ChevronDownIcon className="ml-1 h-5 w-5 text-gray-500" aria-hidden="true" />
+                          <ChevronDownIcon
+                            className="ml-1 h-5 w-5 text-gray-500"
+                            aria-hidden="true"
+                          />
                         </Menu.Button>
 
                         <Transition
@@ -341,7 +348,11 @@ export default function Example() {
                     )}
                   </Menu>
                 ) : (
-                  <a key={item.name} href={item.href} className="text-sm font-medium text-gray-900">
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-sm font-medium text-gray-900"
+                  >
                     {item.name}
                   </a>
                 )
@@ -349,7 +360,10 @@ export default function Example() {
             </nav>
             <div className="flex items-center space-x-8">
               <span className="inline-flex">
-                <a href="#" className="-mx-1 bg-white p-1 rounded-full text-gray-400 hover:text-gray-500">
+                <a
+                  href="#"
+                  className="-mx-1 bg-white p-1 rounded-full text-gray-400 hover:text-gray-500"
+                >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
                 </a>
@@ -360,7 +374,11 @@ export default function Example() {
                   <>
                     <Menu.Button className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">
                       <span className="sr-only">Open user menu</span>
-                      <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                      <img
+                        className="h-8 w-8 rounded-full"
+                        src={user.imageUrl}
+                        alt=""
+                      />
                     </Menu.Button>
 
                     <Transition
@@ -416,7 +434,13 @@ export default function Example() {
 
         {/* Mobile menu, show/hide this `div` based on menu open/closed state */}
         <Transition.Root show={open} as={Fragment}>
-          <Dialog as="div" static className="fixed inset-0 z-40 lg:hidden" open={open} onClose={setOpen}>
+          <Dialog
+            as="div"
+            static
+            className="fixed inset-0 z-40 lg:hidden"
+            open={open}
+            onClose={setOpen}
+          >
             <Transition.Child
               as={Fragment}
               enter="transition-opacity ease-linear duration-300"
@@ -499,13 +523,24 @@ export default function Example() {
                 <div className="border-t border-gray-200 pt-4 pb-3">
                   <div className="max-w-8xl mx-auto px-4 flex items-center sm:px-6">
                     <div className="flex-shrink-0">
-                      <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                      <img
+                        className="h-10 w-10 rounded-full"
+                        src={user.imageUrl}
+                        alt=""
+                      />
                     </div>
                     <div className="ml-3 min-w-0 flex-1">
-                      <div className="text-base font-medium text-gray-800 truncate">{user.name}</div>
-                      <div className="text-sm font-medium text-gray-500 truncate">{user.email}</div>
+                      <div className="text-base font-medium text-gray-800 truncate">
+                        {user.name}
+                      </div>
+                      <div className="text-sm font-medium text-gray-500 truncate">
+                        {user.email}
+                      </div>
                     </div>
-                    <a href="#" className="ml-auto flex-shrink-0 bg-white p-2 text-gray-400 hover:text-gray-500">
+                    <a
+                      href="#"
+                      className="ml-auto flex-shrink-0 bg-white p-2 text-gray-400 hover:text-gray-500"
+                    >
                       <span className="sr-only">View notifications</span>
                       <BellIcon className="h-6 w-6" aria-hidden="true" />
                     </a>
@@ -531,14 +566,19 @@ export default function Example() {
       {/* Bottom section */}
       <div className="min-h-0 flex-1 flex overflow-hidden">
         {/* Narrow sidebar*/}
-        <nav aria-label="Sidebar" className="hidden lg:block lg:flex-shrink-0 lg:bg-gray-800 lg:overflow-y-auto">
+        <nav
+          aria-label="Sidebar"
+          className="hidden lg:block lg:flex-shrink-0 lg:bg-gray-800 lg:overflow-y-auto"
+        >
           <div className="relative w-20 flex flex-col p-3 space-y-3">
             {sidebarNavigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 className={classNames(
-                  item.current ? 'bg-gray-900 text-white' : 'text-gray-400 hover:bg-gray-700',
+                  item.current
+                    ? 'bg-gray-900 text-white'
+                    : 'text-gray-400 hover:bg-gray-700',
                   'flex-shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-lg'
                 )}
               >
@@ -569,21 +609,30 @@ export default function Example() {
                             type="button"
                             className="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-900 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-blue-600"
                           >
-                            <ReplyIcon className="mr-2.5 h-5 w-5 text-gray-400" aria-hidden="true" />
+                            <ReplyIcon
+                              className="mr-2.5 h-5 w-5 text-gray-400"
+                              aria-hidden="true"
+                            />
                             <span>Reply</span>
                           </button>
                           <button
                             type="button"
                             className="hidden sm:inline-flex -ml-px relative items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-900 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-blue-600"
                           >
-                            <PencilIcon className="mr-2.5 h-5 w-5 text-gray-400" aria-hidden="true" />
+                            <PencilIcon
+                              className="mr-2.5 h-5 w-5 text-gray-400"
+                              aria-hidden="true"
+                            />
                             <span>Note</span>
                           </button>
                           <button
                             type="button"
                             className="hidden sm:inline-flex -ml-px relative items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-900 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-blue-600"
                           >
-                            <UserAddIcon className="mr-2.5 h-5 w-5 text-gray-400" aria-hidden="true" />
+                            <UserAddIcon
+                              className="mr-2.5 h-5 w-5 text-gray-400"
+                              aria-hidden="true"
+                            />
                             <span>Assign</span>
                           </button>
                         </span>
@@ -593,24 +642,35 @@ export default function Example() {
                             type="button"
                             className="hidden sm:inline-flex -ml-px relative items-center px-4 py-2 rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-900 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-blue-600"
                           >
-                            <ArchiveIconSolid className="mr-2.5 h-5 w-5 text-gray-400" aria-hidden="true" />
+                            <ArchiveIconSolid
+                              className="mr-2.5 h-5 w-5 text-gray-400"
+                              aria-hidden="true"
+                            />
                             <span>Archive</span>
                           </button>
                           <button
                             type="button"
                             className="hidden sm:inline-flex -ml-px relative items-center px-4 py-2 rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-900 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-blue-600"
                           >
-                            <FolderDownloadIcon className="mr-2.5 h-5 w-5 text-gray-400" aria-hidden="true" />
+                            <FolderDownloadIcon
+                              className="mr-2.5 h-5 w-5 text-gray-400"
+                              aria-hidden="true"
+                            />
                             <span>Move</span>
                           </button>
                         </span>
 
-                        <Menu as="span" className="-ml-px relative block sm:shadow-sm lg:hidden">
+                        <Menu
+                          as="span"
+                          className="-ml-px relative block sm:shadow-sm lg:hidden"
+                        >
                           {({ open }) => (
                             <>
                               <div>
                                 <Menu.Button className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-900 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-blue-600 sm:rounded-md sm:px-3">
-                                  <span className="sr-only sm:hidden">More</span>
+                                  <span className="sr-only sm:hidden">
+                                    More
+                                  </span>
                                   <span className="hidden sm:inline">More</span>
                                   <ChevronDownIcon
                                     className="h-5 w-5 text-gray-400 sm:ml-2 sm:-mr-1"
@@ -639,7 +699,9 @@ export default function Example() {
                                         <a
                                           href="#"
                                           className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            active
+                                              ? 'bg-gray-100 text-gray-900'
+                                              : 'text-gray-700',
                                             'block sm:hidden px-4 py-2 text-sm'
                                           )}
                                         >
@@ -652,7 +714,9 @@ export default function Example() {
                                         <a
                                           href="#"
                                           className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            active
+                                              ? 'bg-gray-100 text-gray-900'
+                                              : 'text-gray-700',
                                             'block sm:hidden px-4 py-2 text-sm'
                                           )}
                                         >
@@ -665,7 +729,9 @@ export default function Example() {
                                         <a
                                           href="#"
                                           className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            active
+                                              ? 'bg-gray-100 text-gray-900'
+                                              : 'text-gray-700',
                                             'block px-4 py-2 text-sm'
                                           )}
                                         >
@@ -678,7 +744,9 @@ export default function Example() {
                                         <a
                                           href="#"
                                           className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            active
+                                              ? 'bg-gray-100 text-gray-900'
+                                              : 'text-gray-700',
                                             'block px-4 py-2 text-sm'
                                           )}
                                         >
@@ -703,14 +771,20 @@ export default function Example() {
                           className="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-blue-600"
                         >
                           <span className="sr-only">Next</span>
-                          <ChevronUpIcon className="h-5 w-5" aria-hidden="true" />
+                          <ChevronUpIcon
+                            className="h-5 w-5"
+                            aria-hidden="true"
+                          />
                         </a>
                         <a
                           href="#"
                           className="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-blue-600"
                         >
                           <span className="sr-only">Previous</span>
-                          <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
+                          <ChevronDownIcon
+                            className="h-5 w-5"
+                            aria-hidden="true"
+                          />
                         </a>
                       </span>
                     </nav>
@@ -724,23 +798,34 @@ export default function Example() {
               <div className="bg-white pt-5 pb-6 shadow">
                 <div className="px-4 sm:flex sm:justify-between sm:items-baseline sm:px-6 lg:px-8">
                   <div className="sm:w-0 sm:flex-1">
-                    <h1 id="message-heading" className="text-lg font-medium text-gray-900">
+                    <h1
+                      id="message-heading"
+                      className="text-lg font-medium text-gray-900"
+                    >
                       {message.subject}
                     </h1>
-                    <p className="mt-1 text-sm text-gray-500 truncate">{message.sender}</p>
+                    <p className="mt-1 text-sm text-gray-500 truncate">
+                      {message.sender}
+                    </p>
                   </div>
 
                   <div className="mt-4 flex items-center justify-between sm:mt-0 sm:ml-6 sm:flex-shrink-0 sm:justify-start">
                     <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-cyan-100 text-cyan-800">
                       {message.status}
                     </span>
-                    <Menu as="div" className="ml-3 relative inline-block text-left">
+                    <Menu
+                      as="div"
+                      className="ml-3 relative inline-block text-left"
+                    >
                       {({ open }) => (
                         <>
                           <div>
                             <Menu.Button className="-my-2 p-2 rounded-full bg-white flex items-center text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600">
                               <span className="sr-only">Open options</span>
-                              <DotsVerticalIcon className="h-5 w-5" aria-hidden="true" />
+                              <DotsVerticalIcon
+                                className="h-5 w-5"
+                                aria-hidden="true"
+                              />
                             </Menu.Button>
                           </div>
 
@@ -764,7 +849,9 @@ export default function Example() {
                                     <button
                                       type="button"
                                       className={classNames(
-                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                        active
+                                          ? 'bg-gray-100 text-gray-900'
+                                          : 'text-gray-700',
                                         'w-full flex justify-between px-4 py-2 text-sm'
                                       )}
                                     >
@@ -777,7 +864,9 @@ export default function Example() {
                                     <a
                                       href="#"
                                       className={classNames(
-                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                        active
+                                          ? 'bg-gray-100 text-gray-900'
+                                          : 'text-gray-700',
                                         'flex justify-between px-4 py-2 text-sm'
                                       )}
                                     >
@@ -790,7 +879,9 @@ export default function Example() {
                                     <a
                                       href="#"
                                       className={classNames(
-                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                        active
+                                          ? 'bg-gray-100 text-gray-900'
+                                          : 'text-gray-700',
                                         'flex justify-between px-4 py-2 text-sm'
                                       )}
                                     >
@@ -810,7 +901,10 @@ export default function Example() {
               {/* Thread section*/}
               <ul className="py-4 space-y-2 sm:px-6 sm:space-y-4 lg:px-8">
                 {message.items.map((item) => (
-                  <li key={item.id} className="bg-white px-4 py-6 shadow sm:rounded-lg sm:px-6">
+                  <li
+                    key={item.id}
+                    className="bg-white px-4 py-6 shadow sm:rounded-lg sm:px-6"
+                  >
                     <div className="sm:flex sm:justify-between sm:items-baseline">
                       <h3 className="text-base font-medium">
                         <span className="text-gray-900">{item.author}</span>{' '}
@@ -837,14 +931,19 @@ export default function Example() {
                 <div className="h-16 bg-white px-6 flex flex-col justify-center">
                   <div className="flex items-baseline space-x-3">
                     <h2 className="text-lg font-medium text-gray-900">Inbox</h2>
-                    <p className="text-sm font-medium text-gray-500">{messages.length} messages</p>
+                    <p className="text-sm font-medium text-gray-500">
+                      {messages.length} messages
+                    </p>
                   </div>
                 </div>
                 <div className="border-t border-b border-gray-200 bg-gray-50 px-6 py-2 text-sm font-medium text-gray-500">
                   Sorted by date
                 </div>
               </div>
-              <nav aria-label="Message list" className="min-h-0 flex-1 overflow-y-auto">
+              <nav
+                aria-label="Message list"
+                className="min-h-0 flex-1 overflow-y-auto"
+              >
                 <ul className="border-b border-gray-200 divide-y divide-gray-200">
                   {messages.map((message) => (
                     <li
@@ -853,10 +952,20 @@ export default function Example() {
                     >
                       <div className="flex justify-between space-x-3">
                         <div className="min-w-0 flex-1">
-                          <a href={message.href} className="block focus:outline-none">
-                            <span className="absolute inset-0" aria-hidden="true" />
-                            <p className="text-sm font-medium text-gray-900 truncate">{message.sender}</p>
-                            <p className="text-sm text-gray-500 truncate">{message.subject}</p>
+                          <a
+                            href={message.href}
+                            className="block focus:outline-none"
+                          >
+                            <span
+                              className="absolute inset-0"
+                              aria-hidden="true"
+                            />
+                            <p className="text-sm font-medium text-gray-900 truncate">
+                              {message.sender}
+                            </p>
+                            <p className="text-sm text-gray-500 truncate">
+                              {message.subject}
+                            </p>
                           </a>
                         </div>
                         <time
@@ -867,7 +976,9 @@ export default function Example() {
                         </time>
                       </div>
                       <div className="mt-1">
-                        <p className="line-clamp-2 text-sm text-gray-600">{message.preview}</p>
+                        <p className="line-clamp-2 text-sm text-gray-600">
+                          {message.preview}
+                        </p>
                       </div>
                     </li>
                   ))}

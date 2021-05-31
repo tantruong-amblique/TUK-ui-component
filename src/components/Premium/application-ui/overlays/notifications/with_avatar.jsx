@@ -2,7 +2,7 @@
 import { Fragment, useState } from 'react'
 import { Transition } from '@headlessui/react'
 
-export default function Example() {
+export default function NWavtar() {
   const [show, setShow] = useState(true)
 
   return (
@@ -35,8 +35,12 @@ export default function Example() {
                     />
                   </div>
                   <div className="ml-3 w-0 flex-1">
-                    <p className="text-sm font-medium text-gray-900">Emilia Gates</p>
-                    <p className="mt-1 text-sm text-gray-500">Sure! 8:30pm works great!</p>
+                    <p className="text-sm font-medium text-gray-900">
+                      Emilia Gates
+                    </p>
+                    <p className="mt-1 text-sm text-gray-500">
+                      Sure! 8:30pm works great!
+                    </p>
                   </div>
                 </div>
               </div>

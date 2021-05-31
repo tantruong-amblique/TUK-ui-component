@@ -25,12 +25,18 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function ContactLE() {
   const [open, setOpen] = useState(true)
 
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" static className="fixed inset-0 overflow-hidden" open={open} onClose={setOpen}>
+      <Dialog
+        as="div"
+        static
+        className="fixed inset-0 overflow-hidden"
+        open={open}
+        onClose={setOpen}
+      >
         <div className="absolute inset-0 overflow-hidden">
           <Dialog.Overlay className="absolute inset-0" />
 
@@ -48,7 +54,9 @@ export default function Example() {
                 <div className="h-full flex flex-col bg-white shadow-xl overflow-y-scroll">
                   <div className="p-6">
                     <div className="flex items-start justify-between">
-                      <Dialog.Title className="text-lg font-medium text-gray-900">Team</Dialog.Title>
+                      <Dialog.Title className="text-lg font-medium text-gray-900">
+                        Team
+                      </Dialog.Title>
                       <div className="ml-3 h-7 flex items-center">
                         <button
                           className="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-indigo-500"
@@ -62,7 +70,10 @@ export default function Example() {
                   </div>
                   <div className="border-b border-gray-200">
                     <div className="px-6">
-                      <nav className="-mb-px flex space-x-6" x-descriptions="Tab component">
+                      <nav
+                        className="-mb-px flex space-x-6"
+                        x-descriptions="Tab component"
+                      >
                         {tabs.map((tab) => (
                           <a
                             key={tab.name}
@@ -84,30 +95,51 @@ export default function Example() {
                     {team.map((person) => (
                       <li key={person.handle}>
                         <div className="relative group py-6 px-5 flex items-center">
-                          <a href={person.href} className="-m-1 flex-1 block p-1">
-                            <div className="absolute inset-0 group-hover:bg-gray-50" aria-hidden="true" />
+                          <a
+                            href={person.href}
+                            className="-m-1 flex-1 block p-1"
+                          >
+                            <div
+                              className="absolute inset-0 group-hover:bg-gray-50"
+                              aria-hidden="true"
+                            />
                             <div className="flex-1 flex items-center min-w-0 relative">
                               <span className="flex-shrink-0 inline-block relative">
-                                <img className="h-10 w-10 rounded-full" src={person.imageUrl} alt="" />
+                                <img
+                                  className="h-10 w-10 rounded-full"
+                                  src={person.imageUrl}
+                                  alt=""
+                                />
                                 <span
                                   className={classNames(
-                                    person.status === 'online' ? 'bg-green-400' : 'bg-gray-300',
+                                    person.status === 'online'
+                                      ? 'bg-green-400'
+                                      : 'bg-gray-300',
                                     'absolute top-0 right-0 block h-2.5 w-2.5 rounded-full ring-2 ring-white'
                                   )}
                                   aria-hidden="true"
                                 />
                               </span>
                               <div className="ml-4 truncate">
-                                <p className="text-sm font-medium text-gray-900 truncate">{person.name}</p>
-                                <p className="text-sm text-gray-500 truncate">{'@' + person.handle}</p>
+                                <p className="text-sm font-medium text-gray-900 truncate">
+                                  {person.name}
+                                </p>
+                                <p className="text-sm text-gray-500 truncate">
+                                  {'@' + person.handle}
+                                </p>
                               </div>
                             </div>
                           </a>
-                          <Menu as="div" className="ml-2 flex-shrink-0 relative inline-block text-left">
+                          <Menu
+                            as="div"
+                            className="ml-2 flex-shrink-0 relative inline-block text-left"
+                          >
                             {({ open }) => (
                               <>
                                 <Menu.Button className="group relative w-8 h-8 bg-white rounded-full inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                  <span className="sr-only">Open options menu</span>
+                                  <span className="sr-only">
+                                    Open options menu
+                                  </span>
                                   <span className="flex items-center justify-center h-full w-full rounded-full">
                                     <DotsVerticalIcon
                                       className="w-5 h-5 text-gray-400 group-hover:text-gray-500"
@@ -135,7 +167,9 @@ export default function Example() {
                                           <a
                                             href="#"
                                             className={classNames(
-                                              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                              active
+                                                ? 'bg-gray-100 text-gray-900'
+                                                : 'text-gray-700',
                                               'block px-4 py-2 text-sm'
                                             )}
                                           >
@@ -148,7 +182,9 @@ export default function Example() {
                                           <a
                                             href="#"
                                             className={classNames(
-                                              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                              active
+                                                ? 'bg-gray-100 text-gray-900'
+                                                : 'text-gray-700',
                                               'block px-4 py-2 text-sm'
                                             )}
                                           >

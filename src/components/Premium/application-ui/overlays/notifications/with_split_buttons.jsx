@@ -2,7 +2,7 @@
 import { Fragment, useState } from 'react'
 import { Transition } from '@headlessui/react'
 
-export default function Example() {
+export default function NWSButton() {
   const [show, setShow] = useState(true)
 
   return (
@@ -27,8 +27,12 @@ export default function Example() {
             <div className="max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5 divide-x divide-gray-200">
               <div className="w-0 flex-1 flex items-center p-4">
                 <div className="w-full">
-                  <p className="text-sm font-medium text-gray-900">Receive notifications</p>
-                  <p className="mt-1 text-sm text-gray-500">Notications may include alerts, sounds, and badges.</p>
+                  <p className="text-sm font-medium text-gray-900">
+                    Receive notifications
+                  </p>
+                  <p className="mt-1 text-sm text-gray-500">
+                    Notications may include alerts, sounds, and badges.
+                  </p>
                 </div>
               </div>
               <div className="flex">

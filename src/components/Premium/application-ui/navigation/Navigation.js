@@ -1,4 +1,6 @@
 import React from 'react'
+import Overlays from '../overlays/Overlays'
+import PageExample from '../page-examples/PageExample'
 import BreadScrumbs from './breadcrumbs/BreadScrumbs'
 import Navbars from './navbars/Navbars'
 import Pagination from './pagination/Pagination'
@@ -17,6 +19,8 @@ const Navigation = () => {
       <Steps />
       <Tabs />
       <VerticalNavigation />
+      <Overlays />
+      <PageExample />
     </div>
   )
 }

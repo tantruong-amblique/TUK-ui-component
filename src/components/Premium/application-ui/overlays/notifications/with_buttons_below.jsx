@@ -3,7 +3,7 @@ import { Fragment, useState } from 'react'
 import { Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/solid'
 
-export default function Example() {
+export default function NWbutton() {
   const [show, setShow] = useState(true)
 
   return (
@@ -36,8 +36,12 @@ export default function Example() {
                     />
                   </div>
                   <div className="ml-3 w-0 flex-1">
-                    <p className="text-sm font-medium text-gray-900">Emilia Gates</p>
-                    <p className="mt-1 text-sm text-gray-500">Sent you an invite to connect.</p>
+                    <p className="text-sm font-medium text-gray-900">
+                      Emilia Gates
+                    </p>
+                    <p className="mt-1 text-sm text-gray-500">
+                      Sent you an invite to connect.
+                    </p>
                     <div className="mt-4 flex">
                       <button
                         type="button"

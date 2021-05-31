@@ -3,7 +3,7 @@ import { Fragment, useState } from 'react'
 import { Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/solid'
 
-export default function Example() {
+export default function Condensed() {
   const [show, setShow] = useState(true)
 
   return (
@@ -29,7 +29,9 @@ export default function Example() {
               <div className="p-4">
                 <div className="flex items-center">
                   <div className="w-0 flex-1 flex justify-between">
-                    <p className="w-0 flex-1 text-sm font-medium text-gray-900">Discussion archived</p>
+                    <p className="w-0 flex-1 text-sm font-medium text-gray-900">
+                      Discussion archived
+                    </p>
                     <button className="ml-3 flex-shrink-0 bg-white rounded-md text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                       Undo
                     </button>
