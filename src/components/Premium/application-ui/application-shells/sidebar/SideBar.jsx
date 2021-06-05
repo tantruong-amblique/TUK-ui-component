@@ -9,19 +9,43 @@ import SiderBarSix from './light_sidebar_with_light_background'
 import SiderBarSeven from './light_sidebar_with_light_header'
 
 const SideBar = () => {
-    return (
-        <div>
-            <SiderBarOne />
-            <SiderBarTwo />
-            <SiderBarThree />
-            <SiderBarFour />
-            <SiderBarFive />
-            <SiderBarSix />
-            <SiderBarSeven />
-            <SiderBarEight />
-
-        </div>
-    )
+  return (
+    <div>
+      <div className="text-4xl animate-pulse m-3 font-semibold">Sidebar</div>
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+        brand_sidebar_with_light_header
+      </div>
+      <SiderBarOne />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+        brand_sidebar
+      </div>
+      <SiderBarTwo />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+        dark_sidebar_with_light_header
+      </div>
+      <SiderBarThree />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+        dark_sidebar
+      </div>
+      <SiderBarFour />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+        light_sidebar_with_constrained_content_area
+      </div>
+      <SiderBarFive />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+        light_sidebar_with_light_background
+      </div>
+      <SiderBarSix />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+        light_sidebar_with_light_header
+      </div>
+      <SiderBarSeven />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+        light_sidebar
+      </div>
+      <SiderBarEight />
+    </div>
+  )
 }
 
 export default SideBar
