@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-export default function ExampleSW() {
+export default function SimpleWell() {
   return (
     <div className="bg-gray-50 sm:rounded-lg">
       <div className="px-4 py-5 sm:p-6">

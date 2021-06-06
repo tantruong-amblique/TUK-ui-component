@@ -6,20 +6,24 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function ExampleWT() {
   const [enabled, setEnabled] = useState(false)
 
   return (
     <div className="bg-white shadow sm:rounded-lg">
       <Switch.Group as="div" className="px-4 py-5 sm:p-6">
-        <Switch.Label as="h3" className="text-lg leading-6 font-medium text-gray-900" passive>
+        <Switch.Label
+          as="h3"
+          className="text-lg leading-6 font-medium text-gray-900"
+          passive
+        >
           Renew subscription automatically
         </Switch.Label>
         <div className="mt-2 sm:flex sm:items-start sm:justify-between">
           <div className="max-w-xl text-sm text-gray-500">
             <p id="renew-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo totam non cumque deserunt officiis ex
-              maiores nostrum.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              totam non cumque deserunt officiis ex maiores nostrum.
             </p>
           </div>
           <div className="mt-5 sm:mt-0 sm:ml-6 sm:flex-shrink-0 sm:flex sm:items-center">
