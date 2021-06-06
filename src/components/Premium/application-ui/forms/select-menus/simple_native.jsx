@@ -14,10 +14,13 @@
   }
   ```
 */
-export default function Example() {
+export default function SelectSix() {
   return (
     <div>
-      <label htmlFor="location" className="block text-sm font-medium text-gray-700">
+      <label
+        htmlFor="location"
+        className="block text-sm font-medium text-gray-700"
+      >
         Location
       </label>
       <select
