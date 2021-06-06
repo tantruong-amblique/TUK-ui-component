@@ -7,15 +7,20 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function S5() {
   return (
     <div className="pb-5 border-b border-gray-200">
       <div className="sm:flex sm:justify-between sm:items-baseline">
         <div className="sm:w-0 sm:flex-1">
-          <h1 id="message-heading" className="text-lg font-medium text-gray-900">
+          <h1
+            id="message-heading"
+            className="text-lg font-medium text-gray-900"
+          >
             Full-Stack Developer
           </h1>
-          <p className="mt-1 text-sm text-gray-500 overflow-hidden overflow-ellipsis">Checkout and Payments Team</p>
+          <p className="mt-1 text-sm text-gray-500 overflow-hidden overflow-ellipsis">
+            Checkout and Payments Team
+          </p>
         </div>
 
         <div className="mt-4 flex items-center justify-between sm:mt-0 sm:ml-6 sm:flex-shrink-0 sm:justify-start">
@@ -52,7 +57,9 @@ export default function Example() {
                           <a
                             href="#"
                             className={classNames(
-                              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                              active
+                                ? 'bg-gray-100 text-gray-900'
+                                : 'text-gray-700',
                               'flex justify-between px-4 py-2 text-sm'
                             )}
                           >
@@ -65,7 +72,9 @@ export default function Example() {
                           <a
                             href="#"
                             className={classNames(
-                              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                              active
+                                ? 'bg-gray-100 text-gray-900'
+                                : 'text-gray-700',
                               'flex justify-between px-4 py-2 text-sm'
                             )}
                           >
@@ -78,7 +87,9 @@ export default function Example() {
                           <button
                             type="button"
                             className={classNames(
-                              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                              active
+                                ? 'bg-gray-100 text-gray-900'
+                                : 'text-gray-700',
                               'w-full flex justify-between px-4 py-2 text-sm'
                             )}
                           >

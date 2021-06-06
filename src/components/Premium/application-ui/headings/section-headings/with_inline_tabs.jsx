@@ -8,7 +8,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function S7() {
   return (
     <div className="border-b border-gray-200">
       <div className="sm:flex sm:items-baseline">

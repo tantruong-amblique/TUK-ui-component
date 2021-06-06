@@ -1,6 +1,7 @@
 import React from 'react'
 import CardHeading from './card-headings/CardHeading'
 import PageHeading from './page-headings/PageHeading'
+import SectionHeadings from './section-headings/SectionHeadings'
 
 const Headings = () => {
   return (
@@ -9,6 +10,7 @@ const Headings = () => {
 
       <CardHeading />
       <PageHeading />
+      <SectionHeadings />
     </div>
   )
 }
