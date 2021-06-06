@@ -5,6 +5,7 @@ import ApplicationShell from './components/Premium/application-ui/application-sh
 import Elements from './components/Premium/application-ui/elements/Elements'
 import FeedBack from './components/Premium/application-ui/feedback/alerts/FeedBack'
 import Form from './components/Premium/application-ui/forms/Form'
+import Headings from './components/Premium/application-ui/headings/Headings'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <DataDisplay />
       <Navigation />
       <Form />
+      <Headings />
     </main>
   )
 }

@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-export default function Example() {
+export default function P6() {
   return (
     <div className="md:flex md:items-center md:justify-between md:space-x-5">
       <div className="flex items-start space-x-5">
@@ -10,7 +10,10 @@ export default function Example() {
               src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
               alt=""
             />
-            <span className="absolute inset-0 shadow-inner rounded-full" aria-hidden="true" />
+            <span
+              className="absolute inset-0 shadow-inner rounded-full"
+              aria-hidden="true"
+            />
           </div>
         </div>
         {/*

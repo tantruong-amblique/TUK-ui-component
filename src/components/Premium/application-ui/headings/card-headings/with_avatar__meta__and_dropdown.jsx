@@ -1,13 +1,18 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
-import { CodeIcon, DotsVerticalIcon, FlagIcon, StarIcon } from '@heroicons/react/solid'
+import {
+  CodeIcon,
+  DotsVerticalIcon,
+  FlagIcon,
+  StarIcon,
+} from '@heroicons/react/solid'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function CardThree() {
   return (
     <div className="bg-white px-4 py-5 sm:px-6">
       <div className="flex space-x-3">
@@ -61,11 +66,16 @@ export default function Example() {
                           <a
                             href="#"
                             className={classNames(
-                              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                              active
+                                ? 'bg-gray-100 text-gray-900'
+                                : 'text-gray-700',
                               'flex px-4 py-2 text-sm'
                             )}
                           >
-                            <StarIcon className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+                            <StarIcon
+                              className="mr-3 h-5 w-5 text-gray-400"
+                              aria-hidden="true"
+                            />
                             <span>Add to favorites</span>
                           </a>
                         )}
@@ -75,11 +85,16 @@ export default function Example() {
                           <a
                             href="#"
                             className={classNames(
-                              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                              active
+                                ? 'bg-gray-100 text-gray-900'
+                                : 'text-gray-700',
                               'flex px-4 py-2 text-sm'
                             )}
                           >
-                            <CodeIcon className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+                            <CodeIcon
+                              className="mr-3 h-5 w-5 text-gray-400"
+                              aria-hidden="true"
+                            />
                             <span>Embed</span>
                           </a>
                         )}
@@ -89,11 +104,16 @@ export default function Example() {
                           <a
                             href="#"
                             className={classNames(
-                              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                              active
+                                ? 'bg-gray-100 text-gray-900'
+                                : 'text-gray-700',
                               'flex px-4 py-2 text-sm'
                             )}
                           >
-                            <FlagIcon className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+                            <FlagIcon
+                              className="mr-3 h-5 w-5 text-gray-400"
+                              aria-hidden="true"
+                            />
                             <span>Report content</span>
                           </a>
                         )}
