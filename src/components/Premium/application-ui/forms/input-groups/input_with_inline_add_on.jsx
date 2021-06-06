@@ -14,10 +14,13 @@
   }
   ```
 */
-export default function Example() {
+export default function InputFour() {
   return (
     <div>
-      <label htmlFor="company_website" className="block text-sm font-medium text-gray-700">
+      <label
+        htmlFor="company_website"
+        className="block text-sm font-medium text-gray-700"
+      >
         Company Website
       </label>
       <div className="mt-1 relative rounded-md shadow-sm">

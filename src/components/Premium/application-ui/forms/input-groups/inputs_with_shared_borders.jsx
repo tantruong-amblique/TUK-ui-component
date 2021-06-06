@@ -14,11 +14,13 @@
   }
   ```
 */
-export default function Example() {
+export default function InputFourteen() {
   return (
     <div>
       <fieldset>
-        <legend className="block text-sm font-medium text-gray-700">Card Details</legend>
+        <legend className="block text-sm font-medium text-gray-700">
+          Card Details
+        </legend>
         <div className="mt-1 bg-white rounded-md shadow-sm -space-y-px">
           <div>
             <label htmlFor="card-number" className="sr-only">
@@ -61,7 +63,9 @@ export default function Example() {
         </div>
       </fieldset>
       <fieldset className="mt-6 bg-white">
-        <legend className="block text-sm font-medium text-gray-700">Billing address</legend>
+        <legend className="block text-sm font-medium text-gray-700">
+          Billing address
+        </legend>
         <div className="mt-1 rounded-md shadow-sm -space-y-px">
           <div>
             <label htmlFor="country" className="sr-only">

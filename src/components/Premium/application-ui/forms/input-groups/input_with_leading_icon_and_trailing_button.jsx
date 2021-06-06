@@ -16,10 +16,13 @@
 */
 import { SortAscendingIcon, UsersIcon } from '@heroicons/react/solid'
 
-export default function Example() {
+export default function InputTen() {
   return (
     <div>
-      <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+      <label
+        htmlFor="email"
+        className="block text-sm font-medium text-gray-700"
+      >
         Search candidates
       </label>
       <div className="mt-1 flex rounded-md shadow-sm">
@@ -36,7 +39,10 @@ export default function Example() {
           />
         </div>
         <button className="-ml-px relative inline-flex items-center space-x-2 px-4 py-2 border border-gray-300 text-sm font-medium rounded-r-md text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
-          <SortAscendingIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+          <SortAscendingIcon
+            className="h-5 w-5 text-gray-400"
+            aria-hidden="true"
+          />
           <span>Sort</span>
         </button>
       </div>

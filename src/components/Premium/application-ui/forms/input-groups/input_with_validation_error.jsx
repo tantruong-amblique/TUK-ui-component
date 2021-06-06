@@ -16,10 +16,13 @@
 */
 import { ExclamationCircleIcon } from '@heroicons/react/solid'
 
-export default function Example() {
+export default function InputThirteen() {
   return (
     <div>
-      <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+      <label
+        htmlFor="email"
+        className="block text-sm font-medium text-gray-700"
+      >
         Email
       </label>
       <div className="mt-1 relative rounded-md shadow-sm">
@@ -34,7 +37,10 @@ export default function Example() {
           aria-describedby="email-error"
         />
         <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-          <ExclamationCircleIcon className="h-5 w-5 text-red-500" aria-hidden="true" />
+          <ExclamationCircleIcon
+            className="h-5 w-5 text-red-500"
+            aria-hidden="true"
+          />
         </div>
       </div>
       <p className="mt-2 text-sm text-red-600" id="email-error">

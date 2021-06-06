@@ -14,7 +14,7 @@
   }
   ```
 */
-export default function Example() {
+export default function InputThree() {
   return (
     <div>
       <label htmlFor="email" className="sr-only">

@@ -16,10 +16,13 @@
 */
 import { MailIcon } from '@heroicons/react/solid'
 
-export default function Example() {
+export default function InputEleven() {
   return (
     <div>
-      <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+      <label
+        htmlFor="email"
+        className="block text-sm font-medium text-gray-700"
+      >
         Email
       </label>
       <div className="mt-1 relative rounded-md shadow-sm">

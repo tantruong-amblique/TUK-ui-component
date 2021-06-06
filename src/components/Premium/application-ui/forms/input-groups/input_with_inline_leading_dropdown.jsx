@@ -14,10 +14,13 @@
   }
   ```
 */
-export default function Example() {
+export default function InputSeven() {
   return (
     <div>
-      <label htmlFor="phone_number" className="block text-sm font-medium text-gray-700">
+      <label
+        htmlFor="phone_number"
+        className="block text-sm font-medium text-gray-700"
+      >
         Phone Number
       </label>
       <div className="mt-1 relative rounded-md shadow-sm">
