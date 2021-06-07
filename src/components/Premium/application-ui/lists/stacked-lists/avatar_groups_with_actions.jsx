@@ -26,7 +26,7 @@ const people = [
   },
 ]
 
-export default function Example() {
+export default function Stacked1() {
   return (
     <div>
       <div className="flow-root mt-6">

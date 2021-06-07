@@ -12,7 +12,7 @@ const people = [
   // More people...
 ]
 
-export default function Example() {
+export default function Table3() {
   return (
     <div className="flex flex-col">
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">

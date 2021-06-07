@@ -66,7 +66,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Feeds3() {
   return (
     <div className="flow-root">
       <ul className="-mb-8">

@@ -13,15 +13,46 @@ import S10 from './with_tabs'
 const SectionHeadings = () => {
   return (
     <div>
+    <div className="text-4xl animate-pulse m-3 font-semibold">Section Heading</div>
+   <div className="text-xl animate-bounce  m-3 font-semibold">simple</div>
       <S1 />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+      with_action
+    </div>
       <S2 />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+      with_actions_and_tabs    </div>
       <S3 />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+      with_actions
+    </div>
       <S4 />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+      with_badge_and_dropdown
+    </div>
+
       <S5 />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+      with_description
+    </div>
+      
       <S6 />
+     <div className="text-xl animate-bounce  m-3 font-semibold">
+     with_inline_tabs
+    </div>
+      
       <S7 />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+      with_input_group
+     </div>
       <S8 />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+      with_label
+     </div>
       <S9 />
+      <div className="text-xl animate-bounce  m-3 font-semibold">
+      with_tabs
+     </div>
       <S10 />
     </div>
   )

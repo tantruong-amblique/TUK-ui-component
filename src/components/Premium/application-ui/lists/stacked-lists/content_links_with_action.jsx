@@ -35,7 +35,7 @@ const announcements = [
   },
 ]
 
-export default function Example() {
+export default function Stacked2() {
   return (
     <div>
       <div className="flow-root mt-6">

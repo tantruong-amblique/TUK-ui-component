@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-export default function Example() {
+export default function Media5() {
   return (
     <div className="flex">
       <div>

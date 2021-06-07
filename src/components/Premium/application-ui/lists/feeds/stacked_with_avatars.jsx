@@ -12,7 +12,7 @@ const activityItems = [
   // More items...
 ]
 
-export default function Example() {
+export default function Feeds2() {
   return (
     <div>
       <ul className="divide-y divide-gray-200">

@@ -4,7 +4,7 @@ const items = [
   // More items...
 ]
 
-export default function Example() {
+export default function Card3() {
   return (
     <div className="bg-white border border-gray-300 overflow-hidden rounded-md">
       <ul className="divide-y divide-gray-300">

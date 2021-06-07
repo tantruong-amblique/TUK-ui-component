@@ -4,7 +4,7 @@ const items = [
   // More items...
 ]
 
-export default function Example() {
+export default function Card7() {
   return (
     <ul className="divide-y divide-gray-200">
       {items.map((item) => (

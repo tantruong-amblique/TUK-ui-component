@@ -20,7 +20,7 @@ const people = [
   },
 ]
 
-export default function Example() {
+export default function Stacked3() {
   return (
     <ul className="divide-y divide-gray-200">
       {people.map((person) => (
