@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { AnnotationIcon, PaperClipIcon, PencilIcon, TrashIcon } from '@heroicons/react/solid'
 
-export default function Example() {
+export default function Dividers8() {
   return (
     <div className="relative">
       <div className="absolute inset-0 flex items-center" aria-hidden="true">

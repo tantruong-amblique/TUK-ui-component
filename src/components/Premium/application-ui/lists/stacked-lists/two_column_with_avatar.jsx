@@ -40,7 +40,7 @@ const applications = [
   },
 ]
 
-export default function Example() {
+export default function Stacked4() {
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-md">
       <ul className="divide-y divide-gray-200">

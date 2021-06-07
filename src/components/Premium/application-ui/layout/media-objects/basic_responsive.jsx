@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-export default function Example() {
+export default function Media3s() {
   return (
     <div className="sm:flex">
       <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">

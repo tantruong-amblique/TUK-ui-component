@@ -12,7 +12,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Grid6() {
   return (
     <div>
       <h2 className="text-gray-500 text-xs font-medium uppercase tracking-wide">Pinned Projects</h2>

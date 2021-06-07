@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-export default function Example() {
+export default function Panel2() {
   return (
     <>
       {/* Be sure to use this with a layout container that is full-width on mobile */}

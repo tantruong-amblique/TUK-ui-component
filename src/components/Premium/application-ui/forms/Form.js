@@ -5,6 +5,7 @@ import InputGroup from './input-groups/InputGroup'
 import RadioGroup from './radio-groups/RadioGroup'
 import SelectMenus from './select-menus/SelectMenus'
 import SignInForms from './sign-in-forms/SignInForms'
+import { Toggles } from './toggles/Toggles'
 
 const Form = () => {
   return (
@@ -15,6 +16,7 @@ const Form = () => {
       <RadioGroup />
       <SelectMenus />
       <SignInForms />
+      <Toggles />
     </div>
   )
 }

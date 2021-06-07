@@ -14,7 +14,7 @@ const people = [
   // More people...
 ]
 
-export default function Example() {
+export default function Grid2() {
   return (
     <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {people.map((person) => (

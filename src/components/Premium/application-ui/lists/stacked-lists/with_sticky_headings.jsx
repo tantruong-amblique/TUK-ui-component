@@ -204,7 +204,7 @@ const directory = {
   ],
 }
 
-export default function Example() {
+export default function Stacked7() {
   return (
     <nav className="h-full overflow-y-auto" aria-label="Directory">
       {Object.keys(directory).map((letter) => (

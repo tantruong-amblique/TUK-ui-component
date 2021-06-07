@@ -27,7 +27,7 @@ const messages = [
   // More messages...
 ]
 
-export default function Example() {
+export default function Stacked8 () {
   return (
     <ul className="divide-y divide-gray-200">
       {messages.map((message) => (
